@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: bbd2248a56675b1419f6433a56b69514
+timeCreated: 1515683355
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: body
+    100002: clothing
+    100004: cop_hair
+    100006: Game_Head
+    100008: Game_Hips
+    100010: Game_LeftArm
+    100012: Game_LeftFoot
+    100014: Game_LeftForeArm
+    100016: Game_LeftHand
+    100018: Game_LeftHandIndex1
+    100020: Game_LeftHandIndex2
+    100022: Game_LeftHandMiddle1
+    100024: Game_LeftHandMiddle2
+    100026: Game_LeftHandThumb1
+    100028: Game_LeftHandThumb2
+    100030: Game_LeftLeg
+    100032: Game_LeftShoulder
+    100034: Game_LeftUpLeg
+    100036: Game_Neck
+    100038: Game_RightArm
+    100040: Game_RightFoot
+    100042: Game_RightForeArm
+    100044: Game_RightHand
+    100046: Game_RightHandIndex1
+    100048: Game_RightHandIndex2
+    100050: Game_RightHandMiddle1
+    100052: Game_RightHandMiddle2
+    100054: Game_RightHandThumb1
+    100056: Game_RightHandThumb2
+    100058: Game_RightLeg
+    100060: Game_RightShoulder
+    100062: Game_RightUpLeg
+    100064: Game_Spine
+    100066: Game_Spine1
+    100068: Game_Spine2
+    100070: glasses1
+    100072: //RootNode
+    100074: security
+    400000: body
+    400002: clothing
+    400004: cop_hair
+    400006: Game_Head
+    400008: Game_Hips
+    400010: Game_LeftArm
+    400012: Game_LeftFoot
+    400014: Game_LeftForeArm
+    400016: Game_LeftHand
+    400018: Game_LeftHandIndex1
+    400020: Game_LeftHandIndex2
+    400022: Game_LeftHandMiddle1
+    400024: Game_LeftHandMiddle2
+    400026: Game_LeftHandThumb1
+    400028: Game_LeftHandThumb2
+    400030: Game_LeftLeg
+    400032: Game_LeftShoulder
+    400034: Game_LeftUpLeg
+    400036: Game_Neck
+    400038: Game_RightArm
+    400040: Game_RightFoot
+    400042: Game_RightForeArm
+    400044: Game_RightHand
+    400046: Game_RightHandIndex1
+    400048: Game_RightHandIndex2
+    400050: Game_RightHandMiddle1
+    400052: Game_RightHandMiddle2
+    400054: Game_RightHandThumb1
+    400056: Game_RightHandThumb2
+    400058: Game_RightLeg
+    400060: Game_RightShoulder
+    400062: Game_RightUpLeg
+    400064: Game_Spine
+    400066: Game_Spine1
+    400068: Game_Spine2
+    400070: glasses1
+    400072: //RootNode
+    400074: security
+    2300000: cop_hair
+    2300002: glasses1
+    3300000: cop_hair
+    3300002: glasses1
+    4300000: cop_hair
+    4300002: glasses1
+    4300004: clothing
+    4300006: body
+    9500000: //RootNode
+    13700000: body
+    13700002: clothing
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cloth.001
+    second: {fileID: 2100000, guid: f555325ed995a6447ba7d987787c43db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: clothing
+    second: {fileID: 2100000, guid: 1ec741bd31593154a894d2aa5a51c7e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyes
+    second: {fileID: 2100000, guid: 7d4328f63a74ad44f850793a8060c05f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: 08c337cf5c3830345a83fd5b67e8ab16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gold.001
+    second: {fileID: 2100000, guid: bd74981c13384a44488b0a0c8a7d7bd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hair
+    second: {fileID: 2100000, guid: efb2337b52a96ab48b2cec5e10eb3b32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mouse
+    second: {fileID: 2100000, guid: af5c307d8f49b994f8e209ecab1e03f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastic.001
+    second: {fileID: 2100000, guid: 2ea207ce201691741b9857147a315996, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rim
+    second: {fileID: 2100000, guid: de2ae93d71638604d943f2f9cac240ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin
+    second: {fileID: 2100000, guid: edb3f1a23e2996d488ba9d107c14f766, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white
+    second: {fileID: 2100000, guid: 0b7ac2f6f69d13240af100e86dd525c9, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
