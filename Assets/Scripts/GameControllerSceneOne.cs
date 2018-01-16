@@ -4,28 +4,86 @@ using UnityEngine;
 
 public class GameControllerSceneOne : MonoBehaviour {
 
-	GameObject jacob, sophia, anniah;
-	Transform camera1;
+	GameObject jacob, sophia, anniah, narrator;
+
+	Camera camera1, camera2, camera3;
+
+	float time;
 
 	Animation jacobWalk, jacobIdle, sophiaIdle, anniahIdle;
 
+	AudioSource narratorAudio, jacobAudio, sophiaAudio;
+
+	AudioClip gettingWorseJacob, gettingWorseAnniah;
+
 	// Use this for initialization
 	void Start () {
+		// Characters
 		jacob = GameObject.Find ("Jacob");
 		sophia = GameObject.Find ("Sophia");
 		anniah = GameObject.Find ("Anniah");	
+		narrator = GameObject.Find ("Narrator");
 
-		camera1 = Camera.main.transform;
+		// Audio
+		narratorAudio = narrator.GetComponent<AudioSource>();
 
-
-
-		//jacob.transform.position -= jacob.transform.forward;
-
+		// Camera
+		camera1 = GameObject.Find("Camera1").GetComponent<Camera>();
+		camera2 = GameObject.Find ("Camera2").GetComponent<Camera>();
+		camera3 = GameObject.Find ("Camera3").GetComponent<Camera>();
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		time = Time.time;
+
+		/* Beginning of play */
+
+		/* Scene One */ 
+
+//		 Narrator starts talking
+
+		if (time > 2.0f && time <  2.0f + Time.deltaTime) {
+			narratorAudio.Play ();
+		}
+
+//		 Camera switches to views of Anniah, Jacob, and Sophia 
+
+		// View Jacob
+		if (time > 8.0f && time < 8.0f + Time.deltaTime) {
+			camera2.depth = -1;
+			camera1.depth = -2;
+		}
+		// View Sophia
+		if (time > 15.0f && time < 15.0f + Time.deltaTime) {
+			camera2.depth = -3;
+			camera1.depth = -2;
+			camera3.depth = -1;
+		}
+
+//		 Jacob asks where the medicine is. 
+
+//		 Sophia gives it to him. Says its right here.
+
+//		 Jacob sys Anniha is gettings worse and gives spoonful of medicine to Anniah
+
+//		 Sophia agrees
+
+//		 Jacob says he wants a boy
+
+//		 Sophia responds shocked and angry
+
+//		 They keep talking 
+
+//		 Jacob gets his stuff and leaves the house.
+
+// 		 Go to Scene Two
+
+
+
+
+
+
 	}
 }
