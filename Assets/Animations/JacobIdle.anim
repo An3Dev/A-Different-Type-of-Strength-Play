@@ -165,10 +165,22 @@ AnimationClip:
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
+        time: 15.633333
+        value: {x: 186.898, y: 90.018, z: -1.2999878}
+        inSlope: {x: 29.151999, y: 0, z: 0}
+        outSlope: {x: 29.151999, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
         time: 15.733334
         value: {x: 200, y: 90.30499, z: -1.3640137}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 15.966666
+        value: {x: 183.041, y: 89.948, z: -1.2979736}
+        inSlope: {x: -14.901274, y: 0, z: 0}
+        outSlope: {x: -14.901274, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
         time: 17.05
@@ -982,10 +994,22 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
+        time: 15.633333
+        value: 186.898
+        inSlope: 29.151999
+        outSlope: 29.151999
+        tangentMode: 136
+      - serializedVersion: 2
         time: 15.733334
         value: 200
         inSlope: 0
         outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 15.966666
+        value: 183.041
+        inSlope: -14.901274
+        outSlope: -14.901274
         tangentMode: 136
       - serializedVersion: 2
         time: 17.05
@@ -1022,8 +1046,20 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
+        time: 15.633333
+        value: 90.018
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
         time: 15.733334
         value: 90.30499
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 15.966666
+        value: 89.948
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1062,8 +1098,20 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
+        time: 15.633333
+        value: -1.2999878
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
         time: 15.733334
         value: -1.3640137
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 15.966666
+        value: -1.2979736
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1268,7 +1316,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: man_shirt/Game_Hips/Game_LeftUpLeg
+    path: man_shirt/Game_Hips/Game_Spine/Game_Spine1/Game_Spine2/Game_Neck/Game_Head
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1278,7 +1326,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: man_shirt/Game_Hips/Game_LeftUpLeg
+    path: man_shirt/Game_Hips/Game_Spine/Game_Spine1/Game_Spine2/Game_Neck/Game_Head
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1288,7 +1336,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: man_shirt/Game_Hips/Game_LeftUpLeg
+    path: man_shirt/Game_Hips/Game_Spine/Game_Spine1/Game_Spine2/Game_Neck/Game_Head
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1328,7 +1376,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: man_shirt/Game_Hips/Game_Spine/Game_Spine1/Game_Spine2/Game_Neck/Game_Head
+    path: man_shirt/Game_Hips/Game_LeftUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1338,7 +1386,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: man_shirt/Game_Hips/Game_Spine/Game_Spine1/Game_Spine2/Game_Neck/Game_Head
+    path: man_shirt/Game_Hips/Game_LeftUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1348,7 +1396,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: man_shirt/Game_Hips/Game_Spine/Game_Spine1/Game_Spine2/Game_Neck/Game_Head
+    path: man_shirt/Game_Hips/Game_LeftUpLeg
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 0

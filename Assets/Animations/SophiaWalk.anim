@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: JacobWalkForward
+  m_Name: SophiaWalk
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -18,75 +18,63 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: {x: 180, y: 90.606995, z: 36}
+        value: {x: 178.587, y: 91.253, z: 30.89}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 0.96666664
-        value: {x: 180.253, y: 90.312996, z: -5.2109985}
-        inSlope: {x: 0.68226326, y: 0, z: -39.922237}
-        outSlope: {x: 0.68226326, y: 0, z: -39.922237}
+        time: 1.3166667
+        value: {x: 178.131, y: 89.716995, z: -19.271973}
+        inSlope: {x: 0, y: -0.37273058, z: -11.529097}
+        outSlope: {x: 0, y: -0.37273058, z: -11.529097}
         tangentMode: 0
       - serializedVersion: 2
-        time: 1.4833333
-        value: {x: 181.102, y: 90.516, z: -23.217987}
-        inSlope: {x: 0.156361, y: 0.06544634, z: -3.4545898}
-        outSlope: {x: 0.156361, y: 0.06544634, z: -3.4545898}
+        time: 2.2
+        value: {x: 178.173, y: 89.51199, z: -25.612976}
+        inSlope: {x: 0.062233247, y: 0, z: 0}
+        outSlope: {x: 0.062233247, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 2.0666666
-        value: {x: 181.145, y: 90.534, z: -24.168}
+        time: 4.016667
+        value: {x: 178.47, y: 91.10899, z: 25.261993}
+        inSlope: {x: 0.33585766, y: 0.7665103, z: 27.38484}
+        outSlope: {x: 0.33585766, y: 0.7665103, z: 27.38484}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 5.016667
+        value: {x: 179.119, y: 91.671, z: 51.520996}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 2.75
-        value: {x: 179.592, y: 90.34, z: 8.4079895}
-        inSlope: {x: -2.2556736, y: 0, z: 48.8854}
-        outSlope: {x: -2.2556736, y: 0, z: 48.8854}
+        time: 6.0333333
+        value: {x: 178.454, y: 91.086, z: 24.425995}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 3.3
-        value: {x: 178.363, y: 90.863, z: 36.123993}
-        inSlope: {x: -0.02455276, y: 0.019080428, z: 0.64910924}
-        outSlope: {x: -0.02455276, y: 0.019080428, z: 0.64910924}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 4.2166667
-        value: {x: 178.354, y: 90.869995, z: 36.362}
+        time: 6.0666666
+        value: {x: 178.454, y: 91.086, z: 30}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: man_shirt/Game_Hips/Game_LeftUpLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.48333332
-        value: {x: -5.723, y: 177.19601, z: -43.503002}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 1.4833333
-        value: {x: -5.5470004, y: 175.80801, z: -29.345001}
-        inSlope: {x: 0.053052403, y: -0.2046541, z: 2.1473684}
-        outSlope: {x: 0.053052403, y: -0.2046541, z: 2.1473684}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 2.0666666
-        value: {x: -5.5260005, y: 175.727, z: -28.495}
+        time: 0.6166667
+        value: {x: -4.7910004, y: 179.65001, z: -53.008003}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -97,19 +85,31 @@ AnimationClip:
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 2.75
-        value: {x: 1.1780001, y: -0.24400002, z: -24.910002}
-        inSlope: {x: 0.6218182, y: -0.2609091, z: -14.253637}
-        outSlope: {x: 0.6218182, y: -0.2609091, z: -14.253637}
+        time: 0.6166667
+        value: {x: -2.38, y: 0.9250001, z: -15.675001}
+        inSlope: {x: -0.10632953, y: 0, z: 0}
+        outSlope: {x: -0.10632953, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 3.3
-        value: {x: 2.052, y: -0.86100006, z: -47.037003}
+        time: 1.3166667
+        value: {x: -2.4150002, y: 0.535, z: -10.429001}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 4.2166667
+        time: 3.1166666
+        value: {x: -2.266, y: 1.4870001, z: -23.369001}
+        inSlope: {x: 0.22074096, y: 1.181111, z: -18.36296}
+        outSlope: {x: 0.22074096, y: 1.181111, z: -18.36296}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 4.016667
+        value: {x: -0.77300006, y: 3.7240002, z: -60.009003}
+        inSlope: {x: 0.7769143, y: 0, z: 0}
+        outSlope: {x: 0.7769143, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 6.0333333
         value: {x: 0, y: 0, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -117,93 +117,99 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: {x: -179.335, y: 90.52799, z: -14.5589905}
+        value: {x: -1.2550001, y: -88.661, z: 146.097}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 0.48333332
-        value: {x: -179.541, y: 90.48599, z: -9.997009}
-        inSlope: {x: -0.86734176, y: 0, z: 19.208342}
-        outSlope: {x: -0.86734176, y: 0, z: 19.208342}
+        time: 1.3333334
+        value: {x: -1.8320001, y: -89.882, z: 189.24799}
+        inSlope: {x: 0, y: -0.84181696, z: 28.669544}
+        outSlope: {x: 0, y: -0.84181696, z: 28.669544}
         tangentMode: 0
       - serializedVersion: 2
-        time: 0.95
-        value: {x: -181.545, y: 90.978, z: 35.989}
+        time: 2.2
+        value: {x: -1.7630001, y: -90.513, z: 209.17}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 2.05
-        value: {x: -181.363, y: 90.836, z: 31.18399}
-        inSlope: {x: 0.31198558, y: -0.24342565, z: -8.237157}
-        outSlope: {x: 0.31198558, y: -0.24342565, z: -8.237157}
+        time: 3.1333334
+        value: {x: -1.815, y: -90.275, z: 201.564}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 3.2833333
-        value: {x: -180.211, y: 90.20799, z: 5.0349884}
-        inSlope: {x: 0, y: 0, z: -21.346767}
-        outSlope: {x: 0, y: 0, z: -21.346767}
+        time: 4.0333333
+        value: {x: -1.807, y: -90.326004, z: 203.174}
+        inSlope: {x: 0.017614717, y: 0, z: 0}
+        outSlope: {x: 0.017614717, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 4.1666665
-        value: {x: -180.211, y: 90.20799, z: -14}
+        time: 4.95
+        value: {x: -1.7160001, y: -89.34801, z: 172.15201}
+        inSlope: {x: 0, y: 0, z: -28.82722}
+        outSlope: {x: 0, y: 0, z: -28.82722}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 6.016667
+        value: {x: -1.7160001, y: -89.34801, z: 146}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: man_shirt/Game_Hips/Game_RightUpLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
         time: 0
+        value: {x: 2.269, y: -0.777, z: -6.5080004}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6
+        value: {x: 1.3510001, y: -2.421, z: -32.226}
+        inSlope: {x: -0.99974996, y: -1.2030001, z: -23.448006}
+        outSlope: {x: -0.99974996, y: -1.2030001, z: -23.448006}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.3333334
+        value: {x: 0.93600005, y: -2.822, z: -40.042004}
+        inSlope: {x: -0.59000003, y: -0.4881251, z: -10.403125}
+        outSlope: {x: -0.59000003, y: -0.4881251, z: -10.403125}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2.2
+        value: {x: 0.407, y: -3.2020001, z: -48.871002}
+        inSlope: {x: -0.52, y: 0, z: 0}
+        outSlope: {x: -0.52, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 3.1333334
         value: {x: 0, y: 0, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 0.48333332
-        value: {x: 0.87900007, y: -0.136, z: -19.351002}
-        inSlope: {x: 2.4568422, y: -0.5726316, z: -64.39684}
-        outSlope: {x: 2.4568422, y: -0.5726316, z: -64.39684}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 0.95
-        value: {x: 2.334, y: -1.3360001, z: -61.177002}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 2.05
-        value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 0, y: 0.056074705, z: 0}
-        outSlope: {x: 0, y: 0.056074705, z: 0}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 2.7333333
-        value: {x: 0.317, y: 0.025, z: -6.4350004}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 3.2833333
-        value: {x: 0, y: 0, z: 0}
+        time: 4.0333333
+        value: {x: 0, y: 0, z: -12.830001}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -214,134 +220,134 @@ AnimationClip:
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 2.7333333
-        value: {x: 1.172, y: -178.12401, z: -46.322002}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 3.2833333
-        value: {x: 2.776, y: -179.06601, z: -67.643005}
+        time: 4.95
+        value: {x: 2.9390001, y: -179.11401, z: -65.222}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
   m_PositionCurves:
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
+        time: 0.6166667
+        value: {x: 4.3655753e-11, y: 0.002133326, z: -0.000000004947651}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.6166667
+        value: {x: 2.1826554e-11, y: 0.0027639945, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 3.1166666
+        value: {x: -0.000000016748244, y: 0.0027640536, z: 0.000000003841579}
+        inSlope: {x: 0, y: 0.000000021228674, z: 0}
+        outSlope: {x: 0, y: 0.000000021228674, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 4.016667
+        value: {x: -0.000000010251205, y: 0.0027640667, z: 0.0000000034923446}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 1.3166667
+        value: {x: -0.0009663691, y: 0.00027589285, z: -0.000024220182}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2.2
+        value: {x: -0.0009663691, y: 0.00027586587, z: -0.000024221317}
+        inSlope: {x: 0, y: -0.000000028769673, z: 0}
+        outSlope: {x: 0, y: -0.000000028769673, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 4.016667
+        value: {x: -0.0009663691, y: 0.00027581517, z: -0.00002421212}
+        inSlope: {x: 0, y: -0.000000067090355, z: 0}
+        outSlope: {x: 0, y: -0.000000067090355, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 5.016667
+        value: {x: -0.0009663691, y: 0.0002756769, z: -0.000024260316}
+        inSlope: {x: 0, y: -0.00000010753025, z: 0}
+        outSlope: {x: 0, y: -0.00000010753025, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 6.0333333
+        value: {x: -0.0009663691, y: 0.00027559832, z: -0.000024254088}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
         time: 0
-        value: {x: -0.0009663538, y: 0.000099974284, z: -0.000024207544}
+        value: {x: 0.00096639304, y: 0.00027591214, z: -0.00002416116}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 0.96666664
-        value: {x: -0.0009663538, y: 0.00009996342, z: -0.000024207311}
-        inSlope: {x: 0, y: -0.000000006858177, z: 1.1970124e-10}
-        outSlope: {x: 0, y: -0.000000006858177, z: 1.1970124e-10}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 2.0666666
-        value: {x: -0.0009663538, y: 0.00009996011, z: -0.000024207297}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    path: man_shirt/Game_Hips/Game_LeftUpLeg
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0.48333332
-        value: {x: 0.0000000020473303, y: 0.0021333294, z: 0.0000000053365383}
+        time: 1.3333334
+        value: {x: 0.00096639304, y: 0.00027584043, z: -0.000024162411}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 1.4833333
-        value: {x: -0.000000009186071, y: 0.0021333368, z: -0.00000000548973}
-        inSlope: {x: -0.000000012985653, y: 0, z: -0.000000010293226}
-        outSlope: {x: -0.000000012985653, y: 0, z: -0.000000010293226}
+        time: 2.2
+        value: {x: 0.00096639304, y: 0.00027584872, z: -0.000024160287}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 2.0666666
-        value: {x: -0.000000018513287, y: 0.002133314, z: -0.000000010961069}
+        time: 3.1333334
+        value: {x: 0.00096639304, y: 0.00027578374, z: -0.000024199431}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 4.0333333
+        value: {x: 0.00096639304, y: 0.0002758884, z: -0.000024162178}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 4.95
+        value: {x: 0.00096639304, y: 0.00027586988, z: -0.000024164769}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 2.75
-        value: {x: -0.0000000016733692, y: 0.0027639964, z: 0.0000000051221054}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 3.3
-        value: {x: 0.0000000017679509, y: 0.002764001, z: 0.000000008730861}
-        inSlope: {x: 0.0000000055806533, y: 0.00000000777866, z: 0.00000000595286}
-        outSlope: {x: 0.0000000055806533, y: 0.00000000777866, z: 0.00000000595286}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 4.2166667
-        value: {x: 0.000000006511589, y: 0.0027640078, z: 0.000000013852967}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: {x: 0.0009663972, y: 0.000099999685, z: -0.000024150428}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 0.48333332
-        value: {x: 0.00096639, y: 0.00009999659, z: -0.000024149234}
-        inSlope: {x: 0, y: -0.000000005667588, z: 0.0000000017155942}
-        outSlope: {x: 0, y: -0.000000005667588, z: 0.0000000017155942}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 0.95
-        value: {x: 0.00096639286, y: 0.0000999943, z: -0.000024148798}
-        inSlope: {x: 0, y: -0.0000000019737971, z: 7.6165346e-10}
-        outSlope: {x: 0, y: -0.0000000019737971, z: 7.6165346e-10}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 2.05
-        value: {x: 0.000966386, y: 0.0000999935, z: -0.000024148041}
-        inSlope: {x: 0, y: -0, z: 0}
-        outSlope: {x: 0, y: -0, z: 0}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 3.2833333
-        value: {x: 0.0009663914, y: 0.00009992929, z: -0.000024149278}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    path: man_shirt/Game_Hips/Game_RightUpLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -352,77 +358,52 @@ AnimationClip:
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 0.48333332
-        value: {x: -2.1826922e-11, y: 0.0027639926, z: 0.0000000015715693}
-        inSlope: {x: 0, y: 0, z: 0.0000000049698565}
-        outSlope: {x: 0, y: 0, z: 0.0000000049698565}
+        time: 0.6
+        value: {x: -0.000000011844743, y: 0.0027640138, z: 2.3282508e-10}
+        inSlope: {x: 0, y: 0, z: 2.2326557e-10}
+        outSlope: {x: 0, y: 0, z: 2.2326557e-10}
         tangentMode: 0
       - serializedVersion: 2
-        time: 0.95
-        value: {x: 6.548077e-11, y: 0.0027639933, z: 0.000000004772914}
+        time: 1.3333334
+        value: {x: 1.3096153e-10, y: 0.0027639943, z: 3.492376e-10}
+        inSlope: {x: 0.00000001526975, y: 0, z: 0}
+        outSlope: {x: 0.00000001526975, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2.2
+        value: {x: 0.000000012586859, y: 0.0027640243, z: 0.0000000012805379}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 2.7333333
-        value: {x: 0.000000009822115, y: 0.0027640194, z: 0.0000000033759637}
+        time: 4.0333333
+        value: {x: 0, y: 0.0027639917, z: -0.0000000026774885}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: {x: 5.8207657e-12, y: 0.002133324, z: 1.056469e-10}
+        value: {x: 5.8207657e-12, y: 0.0021333238, z: 1.056469e-10}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 2.7333333
-        value: {x: 0.000000027174519, y: 0.0021333839, z: 0.0000000052385642}
-        inSlope: {x: 0.000000008278608, y: 0.000000018366437, z: 0.0000000022813007}
-        outSlope: {x: 0.000000008278608, y: 0.000000018366437, z: 0.0000000022813007}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 3.2833333
-        value: {x: 0.00000002718725, y: 0.0021333843, z: 0.000000007595918}
+        time: 4.95
+        value: {x: 0.0000000014551915, y: 0.0021333145, z: 0.0000000034408256}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: {x: -131.7, y: 11.5, z: 25.8}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 2.0166667
-        value: {x: -131.7, y: 11.8, z: 25.8}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      - serializedVersion: 2
-        time: 4.1666665
-        value: {x: -131.7, y: 11.5, z: 25.8}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    path: 
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
@@ -434,95 +415,88 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
-      attribute: 1
-      script: {fileID: 0}
-      typeID: 4
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 554391282
+      path: 3046648185
       attribute: 4
       script: {fileID: 0}
       typeID: 4
       customType: 14
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2225757654
+      path: 3634596242
       attribute: 4
       script: {fileID: 0}
       typeID: 4
       customType: 14
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1097577061
+      path: 3787051199
       attribute: 4
       script: {fileID: 0}
       typeID: 4
       customType: 14
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2605128040
+      path: 51731600
       attribute: 4
       script: {fileID: 0}
       typeID: 4
       customType: 14
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3923991302
+      path: 2271148712
       attribute: 4
       script: {fileID: 0}
       typeID: 4
       customType: 14
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3528820393
+      path: 2621020162
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3634596242
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3046648185
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3787051199
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 51731600
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2271148712
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2621020162
       attribute: 4
       script: {fileID: 0}
       typeID: 4
       customType: 14
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 554391282
-      attribute: 1
-      script: {fileID: 0}
-      typeID: 4
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 2225757654
-      attribute: 1
-      script: {fileID: 0}
-      typeID: 4
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 1097577061
-      attribute: 1
-      script: {fileID: 0}
-      typeID: 4
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 2605128040
-      attribute: 1
-      script: {fileID: 0}
-      typeID: 4
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 3923991302
-      attribute: 1
-      script: {fileID: 0}
-      typeID: 4
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 3528820393
-      attribute: 1
-      script: {fileID: 0}
-      typeID: 4
-      customType: 0
       isPPtrCurve: 0
     pptrCurveMapping: []
   m_AnimationClipSettings:
@@ -530,7 +504,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 4.2166667
+    m_StopTime: 6.0666666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -551,43 +525,43 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 180
+        value: 178.587
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.96666664
-        value: 180.253
-        inSlope: 0.68226326
-        outSlope: 0.68226326
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 1.4833333
-        value: 181.102
-        inSlope: 0.156361
-        outSlope: 0.156361
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.0666666
-        value: 181.145
+        time: 1.3166667
+        value: 178.131
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.75
-        value: 179.592
-        inSlope: -2.2556736
-        outSlope: -2.2556736
+        time: 2.2
+        value: 178.173
+        inSlope: 0.062233247
+        outSlope: 0.062233247
         tangentMode: 136
       - serializedVersion: 2
-        time: 3.3
-        value: 178.363
-        inSlope: -0.02455276
-        outSlope: -0.02455276
+        time: 4.016667
+        value: 178.47
+        inSlope: 0.33585766
+        outSlope: 0.33585766
         tangentMode: 136
       - serializedVersion: 2
-        time: 4.2166667
-        value: 178.354
+        time: 5.016667
+        value: 179.119
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 6.0333333
+        value: 178.454
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 6.0666666
+        value: 178.454
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -595,7 +569,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: man_shirt/Game_Hips/Game_LeftUpLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -603,43 +577,43 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 90.606995
+        value: 91.253
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.96666664
-        value: 90.312996
+        time: 1.3166667
+        value: 89.716995
+        inSlope: -0.37273058
+        outSlope: -0.37273058
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 2.2
+        value: 89.51199
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.4833333
-        value: 90.516
-        inSlope: 0.06544634
-        outSlope: 0.06544634
+        time: 4.016667
+        value: 91.10899
+        inSlope: 0.7665103
+        outSlope: 0.7665103
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.0666666
-        value: 90.534
+        time: 5.016667
+        value: 91.671
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.75
-        value: 90.34
+        time: 6.0333333
+        value: 91.086
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 3.3
-        value: 90.863
-        inSlope: 0.019080428
-        outSlope: 0.019080428
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.2166667
-        value: 90.869995
+        time: 6.0666666
+        value: 91.086
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -647,7 +621,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: man_shirt/Game_Hips/Game_LeftUpLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -655,43 +629,43 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 36
+        value: 30.89
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.96666664
-        value: -5.2109985
-        inSlope: -39.922237
-        outSlope: -39.922237
+        time: 1.3166667
+        value: -19.271973
+        inSlope: -11.529097
+        outSlope: -11.529097
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.4833333
-        value: -23.217987
-        inSlope: -3.4545898
-        outSlope: -3.4545898
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.0666666
-        value: -24.168
+        time: 2.2
+        value: -25.612976
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.75
-        value: 8.4079895
-        inSlope: 48.8854
-        outSlope: 48.8854
+        time: 4.016667
+        value: 25.261993
+        inSlope: 27.38484
+        outSlope: 27.38484
         tangentMode: 136
       - serializedVersion: 2
-        time: 3.3
-        value: 36.123993
-        inSlope: 0.64910924
-        outSlope: 0.64910924
+        time: 5.016667
+        value: 51.520996
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 4.2166667
-        value: 36.362
+        time: 6.0333333
+        value: 24.425995
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 6.0666666
+        value: 30
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -699,7 +673,55 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: man_shirt/Game_Hips/Game_LeftUpLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.6166667
+        value: -4.7910004
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.6166667
+        value: 179.65001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.6166667
+        value: -53.008003
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -707,19 +729,145 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: -0.0009663538
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.96666664
-        value: -0.0009663538
+        time: 0.6166667
+        value: -2.38
+        inSlope: -0.10632953
+        outSlope: -0.10632953
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.3166667
+        value: -2.4150002
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.0666666
-        value: -0.0009663538
+        time: 3.1166666
+        value: -2.266
+        inSlope: 0.22074096
+        outSlope: 0.22074096
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.016667
+        value: -0.77300006
+        inSlope: 0.7769143
+        outSlope: 0.7769143
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 6.0333333
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.6166667
+        value: 0.9250001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.3166667
+        value: 0.535
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 3.1166666
+        value: 1.4870001
+        inSlope: 1.181111
+        outSlope: 1.181111
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.016667
+        value: 3.7240002
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 6.0333333
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.6166667
+        value: -15.675001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.3166667
+        value: -10.429001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 3.1166666
+        value: -23.369001
+        inSlope: -18.36296
+        outSlope: -18.36296
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.016667
+        value: -60.009003
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 6.0333333
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.6166667
+        value: 4.3655753e-11
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -727,27 +875,15 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: man_shirt/Game_Hips/Game_LeftUpLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
     classID: 4
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0
-        value: 0.000099974284
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 0.96666664
-        value: 0.00009996342
-        inSlope: -0.000000006858177
-        outSlope: -0.000000006858177
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.0666666
-        value: 0.00009996011
+        time: 0.6166667
+        value: 0.002133326
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -755,27 +891,15 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: man_shirt/Game_Hips/Game_LeftUpLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
     classID: 4
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0
-        value: -0.000024207544
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 0.96666664
-        value: -0.000024207311
-        inSlope: 1.1970124e-10
-        outSlope: 1.1970124e-10
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.0666666
-        value: -0.000024207297
+        time: 0.6166667
+        value: -0.000000004947651
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -783,111 +907,27 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: man_shirt/Game_Hips/Game_LeftUpLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
     classID: 4
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.48333332
-        value: -5.723
+        time: 0.6166667
+        value: 2.1826554e-11
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.4833333
-        value: -5.5470004
-        inSlope: 0.053052403
-        outSlope: 0.053052403
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.0666666
-        value: -5.5260005
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.x
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0.48333332
-        value: 177.19601
+        time: 3.1166666
+        value: -0.000000016748244
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.4833333
-        value: 175.80801
-        inSlope: -0.2046541
-        outSlope: -0.2046541
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.0666666
-        value: 175.727
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.y
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0.48333332
-        value: -43.503002
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 1.4833333
-        value: -29.345001
-        inSlope: 2.1473684
-        outSlope: 2.1473684
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.0666666
-        value: -28.495
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.z
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0.48333332
-        value: 0.0000000020473303
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 1.4833333
-        value: -0.000000009186071
-        inSlope: -0.000000012985653
-        outSlope: -0.000000012985653
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.0666666
-        value: -0.000000018513287
+        time: 4.016667
+        value: -0.000000010251205
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -895,27 +935,27 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
     classID: 4
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.48333332
-        value: 0.0021333294
+        time: 0.6166667
+        value: 0.0027639945
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.4833333
-        value: 0.0021333368
-        inSlope: 0
-        outSlope: 0
+        time: 3.1166666
+        value: 0.0027640536
+        inSlope: 0.000000021228674
+        outSlope: 0.000000021228674
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.0666666
-        value: 0.002133314
+        time: 4.016667
+        value: 0.0027640667
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -923,27 +963,27 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
     classID: 4
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0.48333332
-        value: 0.0000000053365383
+        time: 0.6166667
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1.4833333
-        value: -0.00000000548973
-        inSlope: -0.000000010293226
-        outSlope: -0.000000010293226
+        time: 3.1166666
+        value: 0.000000003841579
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.0666666
-        value: -0.000000010961069
+        time: 4.016667
+        value: 0.0000000034923446
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -951,129 +991,39 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
     classID: 4
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 0
-        value: 0
+        time: 1.3166667
+        value: -0.0009663691
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.75
-        value: 1.1780001
-        inSlope: 0.6218182
-        outSlope: 0.6218182
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.3
-        value: 2.052
+        time: 2.2
+        value: -0.0009663691
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 4.2166667
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.x
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 0
+        time: 4.016667
+        value: -0.0009663691
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.75
-        value: -0.24400002
-        inSlope: -0.2609091
-        outSlope: -0.2609091
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.3
-        value: -0.86100006
+        time: 5.016667
+        value: -0.0009663691
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 4.2166667
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.y
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.75
-        value: -24.910002
-        inSlope: -14.253637
-        outSlope: -14.253637
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.3
-        value: -47.037003
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.2166667
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.z
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 2.75
-        value: -0.0000000016733692
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.3
-        value: 0.0000000017679509
-        inSlope: 0.0000000055806533
-        outSlope: 0.0000000055806533
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.2166667
-        value: 0.000000006511589
+        time: 6.0333333
+        value: -0.0009663691
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1081,27 +1031,39 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 2.75
-        value: 0.0027639964
+        time: 1.3166667
+        value: 0.00027589285
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 3.3
-        value: 0.002764001
-        inSlope: 0.00000000777866
-        outSlope: 0.00000000777866
+        time: 2.2
+        value: 0.00027586587
+        inSlope: -0.000000028769673
+        outSlope: -0.000000028769673
         tangentMode: 136
       - serializedVersion: 2
-        time: 4.2166667
-        value: 0.0027640078
+        time: 4.016667
+        value: 0.00027581517
+        inSlope: -0.000000067090355
+        outSlope: -0.000000067090355
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 5.016667
+        value: 0.0002756769
+        inSlope: -0.00000010753025
+        outSlope: -0.00000010753025
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 6.0333333
+        value: 0.00027559832
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1109,27 +1071,39 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
-        time: 2.75
-        value: 0.0000000051221054
+        time: 1.3166667
+        value: -0.000024220182
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 3.3
-        value: 0.000000008730861
-        inSlope: 0.00000000595286
-        outSlope: 0.00000000595286
+        time: 2.2
+        value: -0.000024221317
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 4.2166667
-        value: 0.000000013852967
+        time: 4.016667
+        value: -0.00002421212
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 5.016667
+        value: -0.000024260316
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 6.0333333
+        value: -0.000024254088
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1137,7 +1111,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1145,37 +1119,43 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: -179.335
+        value: -1.2550001
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.48333332
-        value: -179.541
-        inSlope: -0.86734176
-        outSlope: -0.86734176
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 0.95
-        value: -181.545
+        time: 1.3333334
+        value: -1.8320001
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.05
-        value: -181.363
-        inSlope: 0.31198558
-        outSlope: 0.31198558
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.2833333
-        value: -180.211
+        time: 2.2
+        value: -1.7630001
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 4.1666665
-        value: -180.211
+        time: 3.1333334
+        value: -1.815
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.0333333
+        value: -1.807
+        inSlope: 0.017614717
+        outSlope: 0.017614717
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.95
+        value: -1.7160001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 6.016667
+        value: -1.7160001
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1183,7 +1163,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: man_shirt/Game_Hips/Game_RightUpLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1191,37 +1171,43 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 90.52799
+        value: -88.661
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.48333332
-        value: 90.48599
+        time: 1.3333334
+        value: -89.882
+        inSlope: -0.84181696
+        outSlope: -0.84181696
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 2.2
+        value: -90.513
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.95
-        value: 90.978
+        time: 3.1333334
+        value: -90.275
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.05
-        value: 90.836
-        inSlope: -0.24342565
-        outSlope: -0.24342565
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.2833333
-        value: 90.20799
+        time: 4.0333333
+        value: -90.326004
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 4.1666665
-        value: 90.20799
+        time: 4.95
+        value: -89.34801
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 6.016667
+        value: -89.34801
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1229,7 +1215,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: man_shirt/Game_Hips/Game_RightUpLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1237,37 +1223,43 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: -14.5589905
+        value: 146.097
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.48333332
-        value: -9.997009
-        inSlope: 19.208342
-        outSlope: 19.208342
+        time: 1.3333334
+        value: 189.24799
+        inSlope: 28.669544
+        outSlope: 28.669544
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.95
-        value: 35.989
+        time: 2.2
+        value: 209.17
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.05
-        value: 31.18399
-        inSlope: -8.237157
-        outSlope: -8.237157
+        time: 3.1333334
+        value: 201.564
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 3.2833333
-        value: 5.0349884
-        inSlope: -21.346767
-        outSlope: -21.346767
+        time: 4.0333333
+        value: 203.174
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 4.1666665
-        value: -14
+        time: 4.95
+        value: 172.15201
+        inSlope: -28.82722
+        outSlope: -28.82722
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 6.016667
+        value: 146
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1275,7 +1267,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: man_shirt/Game_Hips/Game_RightUpLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1283,31 +1275,37 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0.0009663972
+        value: 0.00096639304
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.48333332
-        value: 0.00096639
+        time: 1.3333334
+        value: 0.00096639304
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.95
-        value: 0.00096639286
+        time: 2.2
+        value: 0.00096639304
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.05
-        value: 0.000966386
+        time: 3.1333334
+        value: 0.00096639304
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 3.2833333
-        value: 0.0009663914
+        time: 4.0333333
+        value: 0.00096639304
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.95
+        value: 0.00096639304
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1315,7 +1313,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: man_shirt/Game_Hips/Game_RightUpLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1323,31 +1321,37 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0.000099999685
+        value: 0.00027591214
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.48333332
-        value: 0.00009999659
-        inSlope: -0.000000005667588
-        outSlope: -0.000000005667588
+        time: 1.3333334
+        value: 0.00027584043
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.95
-        value: 0.0000999943
-        inSlope: -0.0000000019737971
-        outSlope: -0.0000000019737971
+        time: 2.2
+        value: 0.00027584872
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.05
-        value: 0.0000999935
-        inSlope: -0
-        outSlope: -0
+        time: 3.1333334
+        value: 0.00027578374
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 3.2833333
-        value: 0.00009992929
+        time: 4.0333333
+        value: 0.0002758884
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.95
+        value: 0.00027586988
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1355,7 +1359,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: man_shirt/Game_Hips/Game_RightUpLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1363,31 +1367,37 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: -0.000024150428
+        value: -0.00002416116
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.48333332
-        value: -0.000024149234
-        inSlope: 0.0000000017155942
-        outSlope: 0.0000000017155942
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 0.95
-        value: -0.000024148798
-        inSlope: 7.6165346e-10
-        outSlope: 7.6165346e-10
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.05
-        value: -0.000024148041
+        time: 1.3333334
+        value: -0.000024162411
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 3.2833333
-        value: -0.000024149278
+        time: 2.2
+        value: -0.000024160287
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 3.1333334
+        value: -0.000024199431
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.0333333
+        value: -0.000024162178
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.95
+        value: -0.000024164769
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1395,7 +1405,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: man_shirt/Game_Hips/Game_RightUpLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1403,36 +1413,36 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
+        value: 2.269
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.6
+        value: 1.3510001
+        inSlope: -0.99974996
+        outSlope: -0.99974996
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.3333334
+        value: 0.93600005
+        inSlope: -0.59000003
+        outSlope: -0.59000003
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 2.2
+        value: 0.407
+        inSlope: -0.52
+        outSlope: -0.52
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 3.1333334
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.48333332
-        value: 0.87900007
-        inSlope: 2.4568422
-        outSlope: 2.4568422
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 0.95
-        value: 2.334
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.05
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.7333333
-        value: 0.317
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.2833333
+        time: 4.0333333
         value: 0
         inSlope: 0
         outSlope: 0
@@ -1441,7 +1451,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1449,36 +1459,36 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
+        value: -0.777
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.6
+        value: -2.421
+        inSlope: -1.2030001
+        outSlope: -1.2030001
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.3333334
+        value: -2.822
+        inSlope: -0.4881251
+        outSlope: -0.4881251
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 2.2
+        value: -3.2020001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 3.1333334
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.48333332
-        value: -0.136
-        inSlope: -0.5726316
-        outSlope: -0.5726316
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 0.95
-        value: -1.3360001
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.05
-        value: 0
-        inSlope: 0.056074705
-        outSlope: 0.056074705
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.7333333
-        value: 0.025
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.2833333
+        time: 4.0333333
         value: 0
         inSlope: 0
         outSlope: 0
@@ -1487,7 +1497,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1495,37 +1505,37 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
+        value: -6.5080004
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 0.6
+        value: -32.226
+        inSlope: -23.448006
+        outSlope: -23.448006
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.3333334
+        value: -40.042004
+        inSlope: -10.403125
+        outSlope: -10.403125
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 2.2
+        value: -48.871002
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 3.1333334
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.48333332
-        value: -19.351002
-        inSlope: -64.39684
-        outSlope: -64.39684
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 0.95
-        value: -61.177002
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.05
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.7333333
-        value: -6.4350004
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.2833333
-        value: 0
+        time: 4.0333333
+        value: -12.830001
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1533,7 +1543,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1546,20 +1556,26 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.48333332
-        value: -2.1826922e-11
+        time: 0.6
+        value: -0.000000011844743
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.95
-        value: 6.548077e-11
+        time: 1.3333334
+        value: 1.3096153e-10
+        inSlope: 0.00000001526975
+        outSlope: 0.00000001526975
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 2.2
+        value: 0.000000012586859
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.7333333
-        value: 0.000000009822115
+        time: 4.0333333
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1567,7 +1583,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1580,20 +1596,26 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.48333332
-        value: 0.0027639926
+        time: 0.6
+        value: 0.0027640138
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.95
-        value: 0.0027639933
+        time: 1.3333334
+        value: 0.0027639943
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.7333333
-        value: 0.0027640194
+        time: 2.2
+        value: 0.0027640243
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.0333333
+        value: 0.0027639917
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1601,7 +1623,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1614,20 +1636,26 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.48333332
-        value: 0.0000000015715693
-        inSlope: 0.0000000049698565
-        outSlope: 0.0000000049698565
+        time: 0.6
+        value: 2.3282508e-10
+        inSlope: 2.2326557e-10
+        outSlope: 2.2326557e-10
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.95
-        value: 0.000000004772914
+        time: 1.3333334
+        value: 3.492376e-10
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.7333333
-        value: 0.0000000033759637
+        time: 2.2
+        value: 0.0000000012805379
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 4.0333333
+        value: -0.0000000026774885
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1635,7 +1663,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1648,14 +1676,8 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.7333333
-        value: 1.172
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.2833333
-        value: 2.776
+        time: 4.95
+        value: 2.9390001
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1663,7 +1685,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1676,14 +1698,8 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.7333333
-        value: -178.12401
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.2833333
-        value: -179.06601
+        time: 4.95
+        value: -179.11401
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1691,7 +1707,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1704,14 +1720,8 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.7333333
-        value: -46.322002
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.2833333
-        value: -67.643005
+        time: 4.95
+        value: -65.222
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1719,7 +1729,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1732,14 +1742,8 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.7333333
-        value: 0.000000027174519
-        inSlope: 0.000000008278608
-        outSlope: 0.000000008278608
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.2833333
-        value: 0.00000002718725
+        time: 4.95
+        value: 0.0000000014551915
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1747,7 +1751,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1755,19 +1759,13 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0.002133324
+        value: 0.0021333238
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.7333333
-        value: 0.0021333839
-        inSlope: 0.000000018366437
-        outSlope: 0.000000018366437
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.2833333
-        value: 0.0021333843
+        time: 4.95
+        value: 0.0021333145
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1775,7 +1773,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1788,14 +1786,8 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.7333333
-        value: 0.0000000052385642
-        inSlope: 0.0000000022813007
-        outSlope: 0.0000000022813007
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 3.2833333
-        value: 0.000000007595918
+        time: 4.95
+        value: 0.0000000034408256
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1803,91 +1795,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: -131.7
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.0166667
-        value: -131.7
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.1666665
-        value: -131.7
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalPosition.x
-    path: 
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 11.5
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.0166667
-        value: 11.8
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.1666665
-        value: 11.5
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalPosition.y
-    path: 
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 25.8
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 2.0166667
-        value: 25.8
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      - serializedVersion: 2
-        time: 4.1666665
-        value: 25.8
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalPosition.z
-    path: 
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves:
@@ -1898,7 +1806,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1908,7 +1816,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1918,7 +1826,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1928,7 +1836,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1938,7 +1846,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1948,7 +1856,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: man_shirt/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
+    path: woman_blouse/Game_Hips/Game_RightUpLeg/Game_RightLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1958,7 +1866,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: man_shirt/Game_Hips/Game_RightUpLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1968,7 +1876,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: man_shirt/Game_Hips/Game_RightUpLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1978,7 +1886,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: man_shirt/Game_Hips/Game_RightUpLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1988,7 +1896,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: man_shirt/Game_Hips/Game_LeftUpLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -1998,7 +1906,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: man_shirt/Game_Hips/Game_LeftUpLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2008,7 +1916,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: man_shirt/Game_Hips/Game_LeftUpLeg
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg/Game_LeftFoot
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2018,7 +1926,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2028,7 +1936,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2038,7 +1946,27 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg
+    path: woman_blouse/Game_Hips/Game_RightUpLeg
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -2048,30 +1976,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
+    path: woman_blouse/Game_Hips/Game_LeftUpLeg/Game_LeftLeg
     classID: 4
     script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: man_shirt/Game_Hips/Game_RightUpLeg/Game_RightLeg/Game_RightFoot
-    classID: 4
-    script: {fileID: 0}
-  m_HasGenericRootTransform: 1
+  m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
   m_Events: []
