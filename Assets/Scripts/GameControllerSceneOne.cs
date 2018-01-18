@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameControllerSceneOne : MonoBehaviour {
 
+
 	GameObject jacob, sophia, anniah, narrator;
 
 	Camera camera1, camera2, camera3;
@@ -15,6 +16,9 @@ public class GameControllerSceneOne : MonoBehaviour {
 	AudioSource narratorAudio, jacobAudio, sophiaAudio;
 
 	AudioClip gettingWorseJacob, gettingWorseAnniah;
+
+	bool askMedicine;
+	bool grabMedicine;
 
 	// Use this for initialization
 	void Start () {
@@ -60,13 +64,37 @@ public class GameControllerSceneOne : MonoBehaviour {
 			camera2.depth = -3;
 			camera1.depth = -2;
 			camera3.depth = -1;
+
 		}
 
 //		 Jacob asks where the medicine is. 
+		if (time > 1f && time < 1f + Time.deltaTime) {
+			jacob.transform.rotation = Quaternion.Euler (0, -90, 0);
+			askMedicine = true;
+
+		}
+
+		if (askMedicine) {
+			jacob.transform.Translate (Vector3.forward * Time.deltaTime);
+			if (jacob.transform.position.x <= -0.48f) {
+				askMedicine = false;
+				grabMedicine = true;
+			}
+		}
+
+		if (grabMedicine) {
+			
+			jacob.transform.Translate (Vector3.forward * Time.deltaTime);
+			if (jacob.transform.position.x <= -3.9f) {
+				grabMedicine = false;
+			}
+		}
+
+
 
 //		 Sophia gives it to him. Says its right here.
 
-//		 Jacob sys Anniha is gettings worse and gives spoonful of medicine to Anniah
+//		 Jacob says Anniah is gettings worse and gives spoonful of medicine to Anniah
 
 //		 Sophia agrees
 
@@ -79,11 +107,6 @@ public class GameControllerSceneOne : MonoBehaviour {
 //		 Jacob gets his stuff and leaves the house.
 
 // 		 Go to Scene Two
-
-
-
-
-
 
 	}
 }
