@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameControllerSceneOne : MonoBehaviour {
 
+	public float timeScale = 1;
 
 	GameObject jacob, sophia, anniah, narrator;
 
@@ -13,12 +14,15 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 	Animation jacobWalk, jacobIdle, sophiaIdle, anniahIdle;
 
+	public Animator jacobAnimator, narratorAnimator, sophiaAnimator, anniahAnimator;
+
 	AudioSource narratorAudio, jacobAudio, sophiaAudio;
 
 	AudioClip gettingWorseJacob, gettingWorseAnniah;
 
 	bool askMedicine;
 	bool grabMedicine;
+	bool goToAnniah;
 
 	// Use this for initialization
 	void Start () {
@@ -40,6 +44,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		Time.timeScale = timeScale;
 		time = Time.time;
 
 		/* Beginning of play */
@@ -68,32 +73,14 @@ public class GameControllerSceneOne : MonoBehaviour {
 		}
 
 //		 Jacob asks where the medicine is. 
-		if (time > 1f && time < 1f + Time.deltaTime) {
-			jacob.transform.rotation = Quaternion.Euler (0, -90, 0);
-			askMedicine = true;
-
-		}
-
-		if (askMedicine) {
-			jacob.transform.Translate (Vector3.forward * Time.deltaTime);
-			if (jacob.transform.position.x <= -0.48f) {
-				askMedicine = false;
-				grabMedicine = true;
-			}
-		}
-
-		if (grabMedicine) {
-			
-			jacob.transform.Translate (Vector3.forward * Time.deltaTime);
-			if (jacob.transform.position.x <= -3.9f) {
-				grabMedicine = false;
-			}
-		}
-
-
-
 //		 Sophia gives it to him. Says its right here.
+		if (time > 19f && time < 19f + Time.deltaTime) {
+//			jacob.transform.rotation = Quaternion.Euler (0, -90, 0);
+//			askMedicine = true;
+			jacobAnimator.SetBool("AskMedicine", true);
 
+		}
+			
 //		 Jacob says Anniah is gettings worse and gives spoonful of medicine to Anniah
 
 //		 Sophia agrees
@@ -109,4 +96,27 @@ public class GameControllerSceneOne : MonoBehaviour {
 // 		 Go to Scene Two
 
 	}
+
+//	void GrabMedicine() {
+//		if (grabMedicine) {
+//			jacob.transform.Translate (Vector3.forward * Time.deltaTime);
+//		}
+//		if (jacob.transform.position.x <= -3.95f) {
+//			grabMedicine = false;
+//			askMedicine = false;
+//			goToAnniah = true;
+//		}
+//	}
+
+//	void GoToAnniah() {
+//		jacob.transform.Translate (Vector3.forward * Time.deltaTime);
+//	}
+//		
+//	void TurnJacob() {
+//		while (jacob.transform.rotation.eulerAngles.y > 90) {
+//			jacob.transform.rotation = Quaternion.Lerp (jacob.transform.rotation, Quaternion.Euler (0, 90, 0), 1 * Time.deltaTime);
+//		}
+//	}
+
+
 }
