@@ -78,6 +78,8 @@ public class GameControllerSceneOne : MonoBehaviour {
 //			jacob.transform.rotation = Quaternion.Euler (0, -90, 0);
 //			askMedicine = true;
 			jacobAnimator.SetBool("AskMedicine", true);
+			// Previous animation has to have exit time.
+			jacobAnimator.SetBool ("LeaveSophia", true);
 
 		}
 			
@@ -92,6 +94,8 @@ public class GameControllerSceneOne : MonoBehaviour {
 //		 They keep talking 
 
 //		 Jacob gets his stuff and leaves the house.
+
+
 
 // 		 Go to Scene Two
 
