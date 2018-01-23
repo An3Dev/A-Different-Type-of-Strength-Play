@@ -94,7 +94,7 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			camera1.transform.SetPositionAndRotation(new Vector3 (-1.204f, 1.797f, -0.364f), Quaternion.Euler(30, 60.62f, 0));
 		}
 
-		if (time >= 32 && time < 32 + Time.deltaTime) {
+		if (time >= 35 && time < 35 + Time.deltaTime) {
 			camera1.depth = -1;
 			camera3.depth = -3;
 			camera2.depth = -2;
