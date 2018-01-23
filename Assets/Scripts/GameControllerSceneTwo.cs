@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameControllerSceneOne : MonoBehaviour {
+public class GameControllerSceneTwo : MonoBehaviour {
+
 
 	public float timeScale = 1;
 
 	public static bool finishedScene1;
 
-	GameObject jacob, sophia, anniah, narrator;
+	GameObject jacob, sophia, mark, narrator;
 
 	Camera camera1, camera2, camera3;
 
 	public float time;
 
-	Animation jacobWalk, jacobIdle, sophiaIdle, anniahIdle;
+	Animation jacobWalk, jacobIdle, sophiaIdle, markIdle;
 
 	public Animator jacobAnimator, narratorAnimator, sophiaAnimator, anniahAnimator, cam3Animator, cam2Animator, cam1Animator;
 
@@ -32,7 +33,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 		// Characters
 		jacob = GameObject.Find ("Jacob");
 		sophia = GameObject.Find ("Sophia");
-		anniah = GameObject.Find ("Anniah");	
+		mark = GameObject.Find ("Mark");	
 		narrator = GameObject.Find ("Narrator");
 
 		// Audio
@@ -44,7 +45,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 		camera3 = GameObject.Find ("Camera3").GetComponent<Camera>();
 
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		Time.timeScale = timeScale;
@@ -54,13 +55,13 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 		/* Scene One */ 
 
-//		 Narrator starts talking
+		//		 Narrator starts talking
 
 		if (time > 2.0f && time <  2.0f + Time.deltaTime) {
 			narratorAudio.Play ();
 		}
 
-//		 Camera switches to views of Anniah, Jacob, and Sophia 
+		//		 Camera switches to views of Anniah, Jacob, and Sophia 
 
 		// View Jacob
 		if (time > 8.0f && time < 8.0f + Time.deltaTime) {
@@ -75,11 +76,11 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 		}
 
-//		 Jacob asks where the medicine is. 
-//		 Sophia gives it to him. Says its right here.
+		//		 Jacob asks where the medicine is. 
+		//		 Sophia gives it to him. Says its right here.
 		if (time > 19f && time < 19f + Time.deltaTime) {
-//			jacob.transform.rotation = Quaternion.Euler (0, -90, 0);
-//			askMedicine = true;
+			//			jacob.transform.rotation = Quaternion.Euler (0, -90, 0);
+			//			askMedicine = true;
 			jacobAnimator.SetBool("AskMedicine", true);
 			// Previous animation has to have exit time.
 			jacobAnimator.SetBool ("LeaveSophia", true);
@@ -122,45 +123,23 @@ public class GameControllerSceneOne : MonoBehaviour {
 			SceneManager.LoadScene ("Scene02");
 			finishedScene1 = true;
 		}
-			
-//		 Jacob says Anniah is gettings worse and gives spoonful of medicine to Anniah
 
-//		 Sophia agrees
+		//		 Jacob says Anniah is gettings worse and gives spoonful of medicine to Anniah
 
-//		 Jacob says he wants a boy
+		//		 Sophia agrees
 
-//		 Sophia responds shocked and angry
+		//		 Jacob says he wants a boy
 
-//		 They keep talking 
+		//		 Sophia responds shocked and angry
 
-//		 Jacob gets his stuff and leaves the house.
+		//		 They keep talking 
+
+		//		 Jacob gets his stuff and leaves the house.
 
 
 
-// 		 Go to Scene Two
+		// 		 Go to Scene Two
 
 	}
-
-//	void GrabMedicine() {
-//		if (grabMedicine) {
-//			jacob.transform.Translate (Vector3.forward * Time.deltaTime);
-//		}
-//		if (jacob.transform.position.x <= -3.95f) {
-//			grabMedicine = false;
-//			askMedicine = false;
-//			goToAnniah = true;
-//		}
-//	}
-
-//	void GoToAnniah() {
-//		jacob.transform.Translate (Vector3.forward * Time.deltaTime);
-//	}
-//		
-//	void TurnJacob() {
-//		while (jacob.transform.rotation.eulerAngles.y > 90) {
-//			jacob.transform.rotation = Quaternion.Lerp (jacob.transform.rotation, Quaternion.Euler (0, 90, 0), 1 * Time.deltaTime);
-//		}
-//	}
-
 
 }
