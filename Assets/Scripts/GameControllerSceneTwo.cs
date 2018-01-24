@@ -28,6 +28,8 @@ public class GameControllerSceneTwo : MonoBehaviour {
 	bool grabMedicine;
 	bool goToAnniah;
 
+	Vector3 offset;
+
 	// Use this for initialization
 	void Start () {
 		// Characters
@@ -42,7 +44,9 @@ public class GameControllerSceneTwo : MonoBehaviour {
 		// Camera
 		camera1 = GameObject.Find("Camera1").GetComponent<Camera>();
 		camera2 = GameObject.Find ("Camera2").GetComponent<Camera>();
-		camera3 = GameObject.Find ("Camera3").GetComponent<Camera>();
+		//camera3 = GameObject.Find ("Camera3").GetComponent<Camera>();
+
+		offset = camera1.transform.position - jacob.transform.position;
 
 	}
 
@@ -57,14 +61,28 @@ public class GameControllerSceneTwo : MonoBehaviour {
 
 		if (time > 2.0f && time <  2.0f + Time.deltaTime) {
 			narratorAudio.Play ();
+			jacobAnimator.SetTrigger ("WalkToMark");
 		}
 
-		//		 Camera switches to views of Anniah, Jacob, and Sophia 
+		if (time > 2.0f && time <  10.0f + Time.deltaTime) {
+			camera1.transform.position = Vector3.Lerp (camera1.transform.position, jacob.transform.position + offset, 1 * Time.deltaTime);
+
+		}
+
+		if (time > 10 && time <  10 + Time.deltaTime) {
+			cam1Animator.SetTrigger ("TurnCamera");
+		}
+			
 
 		// View Narrator
-		if (time > 8.0f && time < 8.0f + Time.deltaTime) {
+		if (time > 14 && time < 14 + Time.deltaTime) {
 			camera2.depth = -1;
 			camera1.depth = -2;
+		}
+
+		if (time > 20.0f && time <  28 + Time.deltaTime) {
+			offset = camera2.transform.position - jacob.transform.position;
+			camera2.transform.position = Vector3.Lerp (camera1.transform.position, jacob.transform.position + offset, 1 * Time.deltaTime);
 		}
 
 
@@ -90,32 +108,7 @@ public class GameControllerSceneTwo : MonoBehaviour {
 
 		// scene three( go to scene one)
 
-		if (time >= 30 && time < 30f + Time.deltaTime) {
-			camera1.transform.SetPositionAndRotation(new Vector3 (-1.204f, 1.797f, -0.364f), Quaternion.Euler(30, 60.62f, 0));
-		}
 
-		if (time >= 35 && time < 35 + Time.deltaTime) {
-			camera1.depth = -1;
-			camera3.depth = -3;
-			camera2.depth = -2;
-		}
-
-
-		if (time >= 41 && time < 41 + Time.deltaTime) {
-			camera3.depth = -1;
-			camera1.depth = -2;
-			camera2.depth = -3;
-		}
-
-		if (time >= 46 && time < 46 + Time.deltaTime) {
-			sophiaAnimator.SetBool ("GetOffCouch", true);
-		}
-
-		// He leaves Sophia at 100 seconds.
-
-		if (time >= 100 && time < 100 + Time.deltaTime) {
-			sophiaAnimator.SetTrigger ("ShakeHead");
-		}
 
 		if (time >= 103 && time < 103 + Time.deltaTime) {
 			SceneManager.LoadScene ("Scene02");
