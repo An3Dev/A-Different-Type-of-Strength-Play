@@ -35,7 +35,7 @@ AnimationClip:
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 4.2833333
+        time: 4.266667
         value: {x: 1.3290001, y: -183.254, z: -0.208}
         inSlope: {x: 0, y: 0, z: 0.3810577}
         outSlope: {x: 0, y: 0, z: 0.3810577}
@@ -43,8 +43,8 @@ AnimationClip:
       - serializedVersion: 2
         time: 5.9166665
         value: {x: -4.9540005, y: -183.26498, z: 0.15}
-        inSlope: {x: -2.0422902, y: -0.007785477, z: 0.1167939}
-        outSlope: {x: -2.0422902, y: -0.007785477, z: 0.1167939}
+        inSlope: {x: -2.0345252, y: -0.007755875, z: 0.116349824}
+        outSlope: {x: -2.0345252, y: -0.007755875, z: 0.116349824}
         tangentMode: 0
       - serializedVersion: 2
         time: 8.65
@@ -264,7 +264,7 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 4.2833333
+        time: 4.266667
         value: 1.3290001
         inSlope: 0
         outSlope: 0
@@ -272,8 +272,8 @@ AnimationClip:
       - serializedVersion: 2
         time: 5.9166665
         value: -4.9540005
-        inSlope: -2.0422902
-        outSlope: -2.0422902
+        inSlope: -2.0345252
+        outSlope: -2.0345252
         tangentMode: 136
       - serializedVersion: 2
         time: 8.65
@@ -334,7 +334,7 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 4.2833333
+        time: 4.266667
         value: -183.254
         inSlope: 0
         outSlope: 0
@@ -342,8 +342,8 @@ AnimationClip:
       - serializedVersion: 2
         time: 5.9166665
         value: -183.26498
-        inSlope: -0.007785477
-        outSlope: -0.007785477
+        inSlope: -0.007755875
+        outSlope: -0.007755875
         tangentMode: 136
       - serializedVersion: 2
         time: 8.65
@@ -404,7 +404,7 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 4.2833333
+        time: 4.266667
         value: -0.208
         inSlope: 0.3810577
         outSlope: 0.3810577
@@ -412,8 +412,8 @@ AnimationClip:
       - serializedVersion: 2
         time: 5.9166665
         value: 0.15
-        inSlope: 0.1167939
-        outSlope: 0.1167939
+        inSlope: 0.116349824
+        outSlope: 0.116349824
         tangentMode: 136
       - serializedVersion: 2
         time: 8.65
@@ -867,37 +867,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: man_shirt/Game_Hips/Game_Spine/Game_Spine1/Game_Spine2/Game_Neck/Game_Head
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: man_shirt/Game_Hips/Game_Spine/Game_Spine1/Game_Spine2/Game_Neck/Game_Head
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: man_shirt/Game_Hips/Game_Spine/Game_Spine1/Game_Spine2/Game_Neck/Game_Head
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
     path: man_shirt/Game_Hips/Game_Spine/Game_Spine1/Game_Spine2
     classID: 4
     script: {fileID: 0}
@@ -917,8 +887,38 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
+    attribute: m_LocalEulerAngles.z
     path: man_shirt/Game_Hips/Game_Spine/Game_Spine1/Game_Spine2
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: man_shirt/Game_Hips/Game_Spine/Game_Spine1/Game_Spine2/Game_Neck/Game_Head
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: man_shirt/Game_Hips/Game_Spine/Game_Spine1/Game_Spine2/Game_Neck/Game_Head
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: man_shirt/Game_Hips/Game_Spine/Game_Spine1/Game_Spine2/Game_Neck/Game_Head
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 0

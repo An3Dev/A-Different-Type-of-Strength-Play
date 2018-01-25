@@ -80,23 +80,39 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			camera1.depth = -2;
 		}
 
-		if (time > 20.0f && time <  28 + Time.deltaTime) {
-			offset = camera2.transform.position - jacob.transform.position;
-			camera2.transform.position = Vector3.Lerp (camera1.transform.position, jacob.transform.position + offset, 1 * Time.deltaTime);
-		}
+
 
 
 		// Jacob says hi to mark.
 
 		// He keeps awlking when mark responds.
 
+		if (time > 20.0f && time <  26 + Time.deltaTime) {
+			camera2.transform.position = Vector3.Lerp (camera2.transform.position, new Vector3(8, 2, -29), 1 * Time.deltaTime);
+		}
+
 		// Jacob turns around says fine. Convo starts.
+		if (time > 29.0f && time <  35 + Time.deltaTime) {
+//			Quaternion rotation = jacob.transform.rotation;
+//			jacob.transform.rotation = Quaternion.Lerp (jacob.transform.rotation, Quaternion.Euler (0, 0, 0), 360 * Time.deltaTime);
+			Vector3 something = jacob.transform.position;
+			jacobAnimator.SetTrigger("TurnAround");
+			jacob.transform.position = something;
+		}
 
 		// Paces for a little bit.
+
+		if (time > 34 && time <  34 + Time.deltaTime) {
+			jacobAnimator.SetTrigger ("StartConvo");
+		}
 
 		// Long talk
 
 		// Jacob walks toward his house.
+
+		if (time > 50&& time <  50 + Time.deltaTime) {
+			jacobAnimator.SetTrigger ("WalkToHouse");
+		}
 		 
 		// narrator says it took a lot of courage while jacob walks.
 
@@ -111,7 +127,7 @@ public class GameControllerSceneTwo : MonoBehaviour {
 
 
 		if (time >= 103 && time < 103 + Time.deltaTime) {
-			SceneManager.LoadScene ("Scene02");
+			SceneManager.LoadScene ("Scene01");
 			finishedScene1 = true;
 		}
 	}

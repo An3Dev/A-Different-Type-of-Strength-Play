@@ -50,95 +50,104 @@ public class GameControllerSceneOne : MonoBehaviour {
 		Time.timeScale = timeScale;
 		time = Time.time;
 
-		/* Beginning of play */
 
-		/* Scene One */ 
+		if (!finishedScene1) {
+			/* Beginning of play */
 
-//		 Narrator starts talking
+			/* Scene One */ 
 
-		if (time > 2.0f && time <  2.0f + Time.deltaTime) {
-			narratorAudio.Play ();
+			//		 Narrator starts talking
+
+			if (time > 2.0f && time <  2.0f + Time.deltaTime) {
+				narratorAudio.Play ();
+			}
+
+			//		 Camera switches to views of Anniah, Jacob, and Sophia 
+
+			// View Jacob
+			if (time > 8.0f && time < 8.0f + Time.deltaTime) {
+				camera2.depth = -1;
+				camera1.depth = -2;
+			}
+			// View Sophia
+			if (time > 15.0f && time < 15.0f + Time.deltaTime) {
+				camera2.depth = -3;
+				camera1.depth = -2;
+				camera3.depth = -1;
+
+			}
+
+			//		 Jacob asks where the medicine is. 
+			//		 Sophia gives it to him. Says its right here.
+			if (time > 19f && time < 19f + Time.deltaTime) {
+				//			jacob.transform.rotation = Quaternion.Euler (0, -90, 0);
+				//			askMedicine = true;
+				jacobAnimator.SetBool("AskMedicine", true);
+				// Previous animation has to have exit time.
+				jacobAnimator.SetBool ("LeaveSophia", true);
+
+			}
+
+			if (time > 20f && time < 20f + Time.deltaTime) {
+				camera3.depth = -1;
+				cam3Animator.SetBool ("Transition", true);
+			}
+
+			if (time >= 30 && time < 30f + Time.deltaTime) {
+				camera1.transform.SetPositionAndRotation(new Vector3 (-1.204f, 1.797f, -0.364f), Quaternion.Euler(30, 60.62f, 0));
+			}
+
+			if (time >= 32 && time < 32 + Time.deltaTime) {
+				camera1.depth = -1;
+				camera3.depth = -3;
+				camera2.depth = -2;
+			}
+
+
+			if (time >= 41 && time < 41 + Time.deltaTime) {
+				camera3.depth = -1;
+				camera1.depth = -2;
+				camera2.depth = -3;
+			}
+
+			if (time >= 46 && time < 46 + Time.deltaTime) {
+				sophiaAnimator.SetBool ("GetOffCouch", true);
+			}
+
+			// He leaves Sophia at 100 seconds.
+
+			if (time >= 100 && time < 100 + Time.deltaTime) {
+				sophiaAnimator.SetTrigger ("ShakeHead");
+			}
+
+			if (time >= 103 && time < 103 + Time.deltaTime) {
+				SceneManager.LoadScene ("Scene02");
+				finishedScene1 = true;
+			}
+
+			//		 Jacob says Anniah is gettings worse and gives spoonful of medicine to Anniah
+
+			//		 Sophia agrees
+
+			//		 Jacob says he wants a boy
+
+			//		 Sophia responds shocked and angry
+
+			//		 They keep talking 
+
+			//		 Jacob gets his stuff and leaves the house.
+
+
+
+			// 		 Go to Scene Two
 		}
+		if (finishedScene1) {
+			//Last scene: Scene 03!
 
-//		 Camera switches to views of Anniah, Jacob, and Sophia 
+			//Emma hugs Jacob. Asks a question. Is asked to leave.
 
-		// View Jacob
-		if (time > 8.0f && time < 8.0f + Time.deltaTime) {
-			camera2.depth = -1;
-			camera1.depth = -2;
+			// Jacob and Sophia sit down and talk. Very Simple.
 		}
-		// View Sophia
-		if (time > 15.0f && time < 15.0f + Time.deltaTime) {
-			camera2.depth = -3;
-			camera1.depth = -2;
-			camera3.depth = -1;
-
-		}
-
-//		 Jacob asks where the medicine is. 
-//		 Sophia gives it to him. Says its right here.
-		if (time > 19f && time < 19f + Time.deltaTime) {
-//			jacob.transform.rotation = Quaternion.Euler (0, -90, 0);
-//			askMedicine = true;
-			jacobAnimator.SetBool("AskMedicine", true);
-			// Previous animation has to have exit time.
-			jacobAnimator.SetBool ("LeaveSophia", true);
-
-		}
-
-		if (time > 20f && time < 20f + Time.deltaTime) {
-			camera3.depth = -1;
-			cam3Animator.SetBool ("Transition", true);
-		}
-
-		if (time >= 30 && time < 30f + Time.deltaTime) {
-			camera1.transform.SetPositionAndRotation(new Vector3 (-1.204f, 1.797f, -0.364f), Quaternion.Euler(30, 60.62f, 0));
-		}
-
-		if (time >= 32 && time < 32 + Time.deltaTime) {
-			camera1.depth = -1;
-			camera3.depth = -3;
-			camera2.depth = -2;
-		}
-
-
-		if (time >= 41 && time < 41 + Time.deltaTime) {
-			camera3.depth = -1;
-			camera1.depth = -2;
-			camera2.depth = -3;
-		}
-
-		if (time >= 46 && time < 46 + Time.deltaTime) {
-			sophiaAnimator.SetBool ("GetOffCouch", true);
-		}
-
-		// He leaves Sophia at 100 seconds.
-
-		if (time >= 100 && time < 100 + Time.deltaTime) {
-			sophiaAnimator.SetTrigger ("ShakeHead");
-		}
-
-		if (time >= 103 && time < 103 + Time.deltaTime) {
-			SceneManager.LoadScene ("Scene02");
-			finishedScene1 = true;
-		}
-			
-//		 Jacob says Anniah is gettings worse and gives spoonful of medicine to Anniah
-
-//		 Sophia agrees
-
-//		 Jacob says he wants a boy
-
-//		 Sophia responds shocked and angry
-
-//		 They keep talking 
-
-//		 Jacob gets his stuff and leaves the house.
-
-
-
-// 		 Go to Scene Two
-
 	}
 
 //	void GrabMedicine() {
