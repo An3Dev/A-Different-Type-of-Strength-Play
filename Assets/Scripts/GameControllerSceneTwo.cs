@@ -32,6 +32,7 @@ public class GameControllerSceneTwo : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		time = 0;
 		// Characters
 		jacob = GameObject.Find ("Jacob");
 		sophia = GameObject.Find ("Sophia");
@@ -53,7 +54,7 @@ public class GameControllerSceneTwo : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Time.timeScale = timeScale;
-		time = Time.time;
+		time = Time.timeSinceLevelLoad;
 
 		/* Scene Two */ 
 
@@ -62,6 +63,7 @@ public class GameControllerSceneTwo : MonoBehaviour {
 		if (time > 2.0f && time <  2.0f + Time.deltaTime) {
 			narratorAudio.Play ();
 			jacobAnimator.SetTrigger ("WalkToMark");
+
 		}
 
 		if (time > 2.0f && time <  10.0f + Time.deltaTime) {
@@ -112,24 +114,47 @@ public class GameControllerSceneTwo : MonoBehaviour {
 
 		if (time > 50&& time <  50 + Time.deltaTime) {
 			jacobAnimator.SetTrigger ("WalkToHouse");
+
 		}
+
+		if (time > 60 && time < 72 + Time.deltaTime) {
+			//cam1Animator.SetTrigger ("FollowJacob");
+			camera1.depth = -1;
+			camera2.depth = -2;
+			Vector3 offset = new Vector3 (-3, 2, 0);
+			camera1.transform.position = jacob.transform.position + offset;
+		}
+
+
 		 
 		// narrator says it took a lot of courage while jacob walks.
 
-		//  sophia opens door sees its jacob slams it back.
+		//  sophia says go away.
 
 		// narrator talks 
 
+		if (time > 80 && time <  80 + Time.deltaTime) {
+			jacobAnimator.SetTrigger ("StartLeaving");
+
+		}
+
+		if (time > 81 && time < 85 + Time.deltaTime) {
+			camera1.transform.position = jacob.transform.position + offset;
+		}
+
+		if (time > 85 && time < 85) {
+			sophiaAnimator.SetTrigger ("WelcomeJacobBack");
+		}
 		// sophia lets him in when he leaves.
 
 		// scene three( go to scene one)
 
 
 
-		if (time >= 103 && time < 103 + Time.deltaTime) {
-			SceneManager.LoadScene ("Scene01");
-			finishedScene1 = true;
-		}
+//		if (time >= 103 && time < 103 + Time.deltaTime) {
+//			SceneManager.LoadScene ("Scene01");
+//			finishedScene1 = true;
+//		}
 	}
 
 }

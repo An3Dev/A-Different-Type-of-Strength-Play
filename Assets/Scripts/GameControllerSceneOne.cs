@@ -112,15 +112,16 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 			if (time >= 46 && time < 46 + Time.deltaTime) {
 				sophiaAnimator.SetBool ("GetOffCouch", true);
+				sophiaAnimator.SetBool ("GetOffCouch", false);
 			}
 
 			// He leaves Sophia at 100 seconds.
 
-			if (time >= 100 && time < 100 + Time.deltaTime) {
+			if (time >= 96 && time < 96 + Time.deltaTime) {
 				sophiaAnimator.SetTrigger ("ShakeHead");
 			}
 
-			if (time >= 103 && time < 103 + Time.deltaTime) {
+			if (time >= 100 && time < 100 + Time.deltaTime) {
 				SceneManager.LoadScene ("Scene02");
 				finishedScene1 = true;
 			}
