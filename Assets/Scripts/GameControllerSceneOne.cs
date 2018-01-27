@@ -47,7 +47,9 @@ public class GameControllerSceneOne : MonoBehaviour {
 		camera3 = GameObject.Find ("Camera3").GetComponent<Camera>();
 
 		jacobAudio = jacob.GetComponent<AudioSource> ();
-
+		if (finishedScene1) {
+			currentClip = 8;
+		}
 	}
 	
 	// Update is called once per frame
@@ -120,17 +122,63 @@ public class GameControllerSceneOne : MonoBehaviour {
 				camera2.depth = -3;
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
+				currentClip++;
 			}
 
 			if (time >= 46 && time < 46 + Time.deltaTime) {
 				sophiaAnimator.SetBool ("GetOffCouch", true);
-				sophiaAnimator.SetBool ("GetOffCouch", false);
+
+				jacobAudio.clip = jacobAudioClips [currentClip];
+				jacobAudio.Play ();
+				currentClip++;
 			}
 
 			// He leaves Sophia at 100 seconds.
 
 			if (time >= 96 && time < 96 + Time.deltaTime) {
 				sophiaAnimator.SetTrigger ("ShakeHead");
+			}
+
+			if (time >= 50 && time < 50 + Time.deltaTime) {
+				jacobAudio.clip = jacobAudioClips [currentClip];
+				jacobAudio.Play ();
+				currentClip++;
+			}
+
+			if (time >= 55 && time < 55 + Time.deltaTime) {
+				jacobAudio.clip = jacobAudioClips [currentClip];
+				jacobAudio.Play ();
+				currentClip++;
+			}
+
+			if (time >= 60 && time < 60 + Time.deltaTime) {
+				jacobAudio.clip = jacobAudioClips [currentClip];
+				jacobAudio.Play ();
+				currentClip++;
+			}
+
+			if (time >= 70 && time < 70 + Time.deltaTime) {
+				jacobAudio.clip = jacobAudioClips [currentClip];
+				jacobAudio.Play ();
+				currentClip++;
+			}
+
+			if (time >= 90 && time < 90 + Time.deltaTime) {
+				jacobAudio.clip = jacobAudioClips [currentClip];
+				jacobAudio.Play ();
+				currentClip++;
+			}
+
+			if (time >= 95 && time < 95 + Time.deltaTime) {
+				jacobAudio.clip = jacobAudioClips [currentClip];
+				jacobAudio.Play ();
+				currentClip++;
+			}
+
+			if (time >= 80 && time < 80 + Time.deltaTime) {
+				jacobAudio.clip = jacobAudioClips [currentClip];
+				jacobAudio.Play ();
+				currentClip++;
 			}
 
 			if (time >= 100 && time < 100 + Time.deltaTime) {
@@ -147,6 +195,8 @@ public class GameControllerSceneOne : MonoBehaviour {
 			//		 Sophia responds shocked and angry
 
 			//		 They keep talking 
+
+
 
 			//		 Jacob gets his stuff and leaves the house.
 

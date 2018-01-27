@@ -22,13 +22,15 @@ public class GameControllerSceneTwo : MonoBehaviour {
 
 	AudioSource narratorAudio, jacobAudio, sophiaAudio;
 
-	AudioClip gettingWorseJacob, gettingWorseAnniah;
+	public AudioClip[] jacobAudioClips;
 
 	bool askMedicine;
 	bool grabMedicine;
 	bool goToAnniah;
 
 	Vector3 offset;
+
+	int currentClip = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -48,6 +50,8 @@ public class GameControllerSceneTwo : MonoBehaviour {
 		//camera3 = GameObject.Find ("Camera3").GetComponent<Camera>();
 
 		offset = camera1.transform.position - jacob.transform.position;
+
+		jacobAudio = jacob.GetComponent<AudioSource> ();
 
 	}
 
@@ -87,10 +91,29 @@ public class GameControllerSceneTwo : MonoBehaviour {
 
 		// Jacob says hi to mark.
 
+		if (time >= 18 && time < 18 + Time.deltaTime) {
+			jacobAudio.clip = jacobAudioClips [currentClip];
+			jacobAudio.Play ();
+			currentClip++;
+		}
+
 		// He keeps awlking when mark responds.
 
 		if (time > 20.0f && time <  26 + Time.deltaTime) {
 			camera2.transform.position = Vector3.Lerp (camera2.transform.position, new Vector3(8, 2, -29), 1 * Time.deltaTime);
+		}
+
+		if (time >= 22 && time < 22 + Time.deltaTime) {
+			jacobAudio.clip = jacobAudioClips [currentClip];
+			jacobAudio.Play ();
+			currentClip++;
+		}
+
+
+		if (time >= 26 && time < 26 + Time.deltaTime) {
+			jacobAudio.clip = jacobAudioClips [currentClip];
+			jacobAudio.Play ();
+			currentClip++;
 		}
 
 		// Jacob turns around says fine. Convo starts.
@@ -100,6 +123,16 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			Vector3 something = jacob.transform.position;
 			jacobAnimator.SetTrigger("TurnAround");
 			jacob.transform.position = something;
+
+
+
+		}
+
+		if (time > 29 ){
+			
+			jacobAudio.clip = jacobAudioClips [currentClip];
+			jacobAudio.Play ();
+			currentClip++;
 		}
 
 		// Paces for a little bit.
