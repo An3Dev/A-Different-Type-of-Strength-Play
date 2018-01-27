@@ -21,7 +21,10 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 	AudioSource narratorAudio, jacobAudio, sophiaAudio;
 
-	AudioClip gettingWorseJacob, gettingWorseAnniah;
+
+	public AudioClip[] jacobAudioClips;
+
+	int currentClip = 0;
 
 	bool askMedicine;
 	bool grabMedicine;
@@ -42,6 +45,8 @@ public class GameControllerSceneOne : MonoBehaviour {
 		camera1 = GameObject.Find("Camera1").GetComponent<Camera>();
 		camera2 = GameObject.Find ("Camera2").GetComponent<Camera>();
 		camera3 = GameObject.Find ("Camera3").GetComponent<Camera>();
+
+		jacobAudio = jacob.GetComponent<AudioSource> ();
 
 	}
 	
@@ -83,6 +88,9 @@ public class GameControllerSceneOne : MonoBehaviour {
 				//			jacob.transform.rotation = Quaternion.Euler (0, -90, 0);
 				//			askMedicine = true;
 				jacobAnimator.SetBool("AskMedicine", true);
+				jacobAudio.clip = jacobAudioClips [currentClip];
+				jacobAudio.Play ();
+				currentClip++;
 				// Previous animation has to have exit time.
 				jacobAnimator.SetBool ("LeaveSophia", true);
 
@@ -91,9 +99,11 @@ public class GameControllerSceneOne : MonoBehaviour {
 			if (time > 20f && time < 20f + Time.deltaTime) {
 				camera3.depth = -1;
 				cam3Animator.SetBool ("Transition", true);
+
 			}
 
 			if (time >= 30 && time < 30f + Time.deltaTime) {
+				
 				camera1.transform.SetPositionAndRotation(new Vector3 (-1.204f, 1.797f, -0.364f), Quaternion.Euler(30, 60.62f, 0));
 			}
 
@@ -108,6 +118,8 @@ public class GameControllerSceneOne : MonoBehaviour {
 				camera3.depth = -1;
 				camera1.depth = -2;
 				camera2.depth = -3;
+				jacobAudio.clip = jacobAudioClips [currentClip];
+				jacobAudio.Play ();
 			}
 
 			if (time >= 46 && time < 46 + Time.deltaTime) {
