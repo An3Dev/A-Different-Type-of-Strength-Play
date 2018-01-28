@@ -55,7 +55,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Time.timeScale = timeScale;
-		time = Time.time;
+		time = Time.timeSinceLevelLoad;
 
 
 		if (!finishedScene1) {
@@ -98,7 +98,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 			}
 
-			if (time > 20f && time < 20f + Time.deltaTime) {
+			if (time > 22f && time < 22f + Time.deltaTime) {
 				camera3.depth = -1;
 				cam3Animator.SetBool ("Transition", true);
 
@@ -115,6 +115,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 				camera2.depth = -2;
 			}
 
+			// I think shes getting worse
 
 			if (time >= 41 && time < 41 + Time.deltaTime) {
 				camera3.depth = -1;
@@ -125,27 +126,10 @@ public class GameControllerSceneOne : MonoBehaviour {
 				currentClip++;
 			}
 
-			if (time >= 46 && time < 46 + Time.deltaTime) {
+			// Been thinking
+			if (time >= 50 && time < 50 + Time.deltaTime) {
 				sophiaAnimator.SetBool ("GetOffCouch", true);
 
-				jacobAudio.clip = jacobAudioClips [currentClip];
-				jacobAudio.Play ();
-				currentClip++;
-			}
-
-			// He leaves Sophia at 100 seconds.
-
-			if (time >= 96 && time < 96 + Time.deltaTime) {
-				sophiaAnimator.SetTrigger ("ShakeHead");
-			}
-
-			if (time >= 50 && time < 50 + Time.deltaTime) {
-				jacobAudio.clip = jacobAudioClips [currentClip];
-				jacobAudio.Play ();
-				currentClip++;
-			}
-
-			if (time >= 55 && time < 55 + Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
@@ -157,29 +141,55 @@ public class GameControllerSceneOne : MonoBehaviour {
 				currentClip++;
 			}
 
+			// yes
 			if (time >= 70 && time < 70 + Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
 			}
 
-//			if (time >= 90 && time < 90 + Time.deltaTime) {
-//				jacobAudio.clip = jacobAudioClips [currentClip];
-//				jacobAudio.Play ();
-//				currentClip++;
-//			}
-
-//			if (time >= 95 && time < 95 + Time.deltaTime) {
-//				jacobAudio.clip = jacobAudioClips [currentClip];
-//				jacobAudio.Play ();
-//				currentClip++;
-//			}
-
+			// look,
 			if (time >= 80 && time < 80 + Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
 			}
+
+			// if i leave you won't be able to live without me
+			if (time >= 90 && time < 90 + Time.deltaTime) {
+				jacobAudio.clip = jacobAudioClips [currentClip];
+				jacobAudio.Play ();
+				currentClip++;
+			}
+
+			// Fine
+			if (time >= 100 && time < 100 + Time.deltaTime) {
+				jacobAudio.clip = jacobAudioClips [currentClip];
+				jacobAudio.Play ();
+				currentClip++;
+			}
+
+			//			if (time >= 90 && time < 90 + Time.deltaTime) {
+			//				jacobAudio.clip = jacobAudioClips [currentClip];
+			//				jacobAudio.Play ();
+			//				currentClip++;
+			//			}
+
+			//			if (time >= 95 && time < 95 + Time.deltaTime) {
+			//				jacobAudio.clip = jacobAudioClips [currentClip];
+			//				jacobAudio.Play ();
+			//				currentClip++;
+			//			}
+
+
+
+			// He leaves Sophia at 100 seconds.
+
+			if (time >= 96 && time < 96 + Time.deltaTime) {
+				sophiaAnimator.SetTrigger ("ShakeHead");
+			}
+
+
 
 			if (time >= 100 && time < 100 + Time.deltaTime) {
 				SceneManager.LoadScene ("Scene02");
@@ -205,34 +215,24 @@ public class GameControllerSceneOne : MonoBehaviour {
 			// 		 Go to Scene Two
 		}
 		if (finishedScene1) {
+
 			//Last scene: Scene 03!
+
+			anniah.SetActive (true);
+
+
+
+			if (time > 10 && time < 10 + Time.deltaTime) {
+				jacobAudio.clip = jacobAudioClips [currentClip];
+				jacobAudio.Play ();
+				currentClip++;
+			}
 
 			//Emma hugs Jacob. Asks a question. Is asked to leave.
 
 			// Jacob and Sophia sit down and talk. Very Simple.
 		}
 	}
-
-//	void GrabMedicine() {
-//		if (grabMedicine) {
-//			jacob.transform.Translate (Vector3.forward * Time.deltaTime);
-//		}
-//		if (jacob.transform.position.x <= -3.95f) {
-//			grabMedicine = false;
-//			askMedicine = false;
-//			goToAnniah = true;
-//		}
-//	}
-
-//	void GoToAnniah() {
-//		jacob.transform.Translate (Vector3.forward * Time.deltaTime);
-//	}
-//		
-//	void TurnJacob() {
-//		while (jacob.transform.rotation.eulerAngles.y > 90) {
-//			jacob.transform.rotation = Quaternion.Lerp (jacob.transform.rotation, Quaternion.Euler (0, 90, 0), 1 * Time.deltaTime);
-//		}
-//	}
 
 
 }
