@@ -196,7 +196,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 351378716}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &351378718
 Behaviour:
   m_ObjectHideFlags: 0
@@ -754,6 +754,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1848858400}
   - component: {fileID: 1848858399}
+  - component: {fileID: 1848858401}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -810,6 +811,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1848858401
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1848858398}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0b858598296539043a368a576f1e009a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &2033434556
 Prefab:
   m_ObjectHideFlags: 0

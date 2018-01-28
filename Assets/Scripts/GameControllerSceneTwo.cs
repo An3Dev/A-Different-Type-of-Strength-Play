@@ -128,7 +128,7 @@ public class GameControllerSceneTwo : MonoBehaviour {
 
 		}
 
-		if (time > 29 ){
+		if (time > 29 && time < 29 + Time.deltaTime){
 			
 			jacobAudio.clip = jacobAudioClips [currentClip];
 			jacobAudio.Play ();
@@ -141,16 +141,48 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			jacobAnimator.SetTrigger ("StartConvo");
 		}
 
+
+
 		// Long talk
+
+		if (time > 35 && time < 35 + Time.deltaTime){
+
+			jacobAudio.clip = jacobAudioClips [currentClip];
+			jacobAudio.Play ();
+			currentClip++;
+		}
+
+		if (time > 45 && time < 45 + Time.deltaTime){
+
+			jacobAudio.clip = jacobAudioClips [currentClip];
+			jacobAudio.Play ();
+			currentClip++;
+		}
+
+		// Long story short
+		if (time > 55 && time < 55 + Time.deltaTime){
+
+			jacobAudio.clip = jacobAudioClips [currentClip];
+			jacobAudio.Play ();
+			currentClip++;
+		}
+
+		if (time > 65 && time < 65 + Time.deltaTime){
+
+			jacobAudio.clip = jacobAudioClips [currentClip];
+			jacobAudio.Play ();
+			currentClip++;
+		}
+
 
 		// Jacob walks toward his house.
 
-		if (time > 50&& time <  50 + Time.deltaTime) {
+		if (time > 55 && time <  55 + Time.deltaTime) {
 			jacobAnimator.SetTrigger ("WalkToHouse");
 
 		}
 
-		if (time > 60 && time < 72 + Time.deltaTime) {
+		if (time > 65 && time < 77 + Time.deltaTime) {
 			//cam1Animator.SetTrigger ("FollowJacob");
 			camera1.depth = -1;
 			camera2.depth = -2;
@@ -158,7 +190,12 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			camera1.transform.position = jacob.transform.position + offset;
 		}
 
+		if (time > 75 && time < 75 + Time.deltaTime){
 
+			jacobAudio.clip = jacobAudioClips [currentClip];
+			jacobAudio.Play ();
+			currentClip++;
+		}
 		 
 		// narrator says it took a lot of courage while jacob walks.
 
@@ -166,16 +203,23 @@ public class GameControllerSceneTwo : MonoBehaviour {
 
 		// narrator talks 
 
-		if (time > 80 && time <  80 + Time.deltaTime) {
+		if (time > 85 && time <  85 + Time.deltaTime) {
 			jacobAnimator.SetTrigger ("StartLeaving");
 
 		}
 
-		if (time > 81 && time < 85 + Time.deltaTime) {
+		if (time > 86 && time < 95 + Time.deltaTime) {
+			if (time > 86 && time < 86 + Time.deltaTime) {
+				offset = camera1.transform.position - jacob.transform.position;
+			}
 			camera1.transform.position = jacob.transform.position + offset;
 		}
 
-		if (time > 85 && time < 85) {
+		if (time > 98 && time < 98 + Time.deltaTime) {
+			camera1.transform.rotation = Quaternion.Euler(new Vector3 (20, 0, 0));
+		}
+
+		if (time > 105 && time < 105) {
 			sophiaAnimator.SetTrigger ("WelcomeJacobBack");
 		}
 		// sophia lets him in when he leaves.
@@ -184,10 +228,11 @@ public class GameControllerSceneTwo : MonoBehaviour {
 
 
 
-//		if (time >= 103 && time < 103 + Time.deltaTime) {
-//			SceneManager.LoadScene ("Scene01");
-//			finishedScene1 = true;
-//		}
+		if (time >= 108 && time < 108 + Time.deltaTime) {
+			finishedScene1 = true;
+			SceneManager.LoadScene ("Scene01");
+
+		}
 	}
 
 }

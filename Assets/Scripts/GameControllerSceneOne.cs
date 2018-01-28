@@ -163,17 +163,17 @@ public class GameControllerSceneOne : MonoBehaviour {
 				currentClip++;
 			}
 
-			if (time >= 90 && time < 90 + Time.deltaTime) {
-				jacobAudio.clip = jacobAudioClips [currentClip];
-				jacobAudio.Play ();
-				currentClip++;
-			}
+//			if (time >= 90 && time < 90 + Time.deltaTime) {
+//				jacobAudio.clip = jacobAudioClips [currentClip];
+//				jacobAudio.Play ();
+//				currentClip++;
+//			}
 
-			if (time >= 95 && time < 95 + Time.deltaTime) {
-				jacobAudio.clip = jacobAudioClips [currentClip];
-				jacobAudio.Play ();
-				currentClip++;
-			}
+//			if (time >= 95 && time < 95 + Time.deltaTime) {
+//				jacobAudio.clip = jacobAudioClips [currentClip];
+//				jacobAudio.Play ();
+//				currentClip++;
+//			}
 
 			if (time >= 80 && time < 80 + Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
