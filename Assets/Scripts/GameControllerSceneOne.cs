@@ -8,8 +8,9 @@ public class GameControllerSceneOne : MonoBehaviour {
 	public float timeScale = 1;
 
 	public static bool finishedScene1;
+	public bool finishedScenePublic;
 
-	GameObject jacob, sophia, anniah, narrator;
+	GameObject jacob, sophia, anniah, narrator, emma, medicineBottle;
 
 	Camera camera1, camera2, camera3;
 
@@ -17,9 +18,11 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 	Animation jacobWalk, jacobIdle, sophiaIdle, anniahIdle;
 
-	public Animator jacobAnimator, narratorAnimator, sophiaAnimator, anniahAnimator, cam3Animator, cam2Animator, cam1Animator;
+	public Animator jacobAnimator, narratorAnimator, sophiaAnimator, anniahAnimator, cam3Animator, cam2Animator, cam1Animator, emmaAnimator, fadeAnimator;
 
 	AudioSource narratorAudio, jacobAudio, sophiaAudio;
+
+	Vector3 medicineOffset;
 
 
 	public AudioClip[] jacobAudioClips;
@@ -37,6 +40,8 @@ public class GameControllerSceneOne : MonoBehaviour {
 		sophia = GameObject.Find ("Sophia");
 		anniah = GameObject.Find ("Anniah");	
 		narrator = GameObject.Find ("Narrator");
+		emma = GameObject.Find ("Emma");
+		medicineBottle = GameObject.Find ("MedicineBottle");
 
 		// Audio
 		narratorAudio = narrator.GetComponent<AudioSource>();
@@ -47,9 +52,15 @@ public class GameControllerSceneOne : MonoBehaviour {
 		camera3 = GameObject.Find ("Camera3").GetComponent<Camera>();
 
 		jacobAudio = jacob.GetComponent<AudioSource> ();
+
 		if (finishedScene1) {
 			currentClip = 8;
+			emma.SetActive (true);
+		} else {
+			emma.SetActive (false);
 		}
+
+		finishedScenePublic = finishedScene1;
 	}
 	
 	// Update is called once per frame
@@ -96,6 +107,15 @@ public class GameControllerSceneOne : MonoBehaviour {
 				// Previous animation has to have exit time.
 				jacobAnimator.SetBool ("LeaveSophia", true);
 
+			}
+
+			if (time > 29 && time < 36 + Time.deltaTime) {
+				if (time > 19 && time < 19 + Time.deltaTime) {
+					medicineBottle.transform.position = new Vector3 (-3.494f, 0.914f, 3.913f);
+					//medicineOffset = jacob.transform.position - medicineBottle.transform.position;
+				}
+
+				//medicineBottle.transform.position = jacob.transform.position + medicineOffset;
 			}
 
 			if (time > 22f && time < 22f + Time.deltaTime) {
@@ -190,10 +210,13 @@ public class GameControllerSceneOne : MonoBehaviour {
 			}
 
 
-
+			if (time >= 96 && time < 96 + Time.deltaTime) {
+				fadeAnimator.SetTrigger ("FadeOut");
+			}
 			if (time >= 100 && time < 100 + Time.deltaTime) {
-				SceneManager.LoadScene ("Scene02");
 				finishedScene1 = true;
+				SceneManager.LoadScene ("Scene02");
+
 			}
 
 			//		 Jacob says Anniah is gettings worse and gives spoonful of medicine to Anniah
@@ -214,13 +237,33 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 			// 		 Go to Scene Two
 		}
+
+
+/*/////////////////////Scene 3//////////////////////*/
 		if (finishedScene1) {
-
 			//Last scene: Scene 03!
+			if (time > 0.1f && time < 0.1f + Time.deltaTime) {
+				camera2.depth = -3;
+				camera1.depth = -2;
+				camera3.depth = -1;
+				cam3Animator.SetTrigger ("Transition");
+			}
 
-			anniah.SetActive (true);
+			if (time > 5 && time < 5 + Time.deltaTime) {
+				sophiaAnimator.SetTrigger ("FaceJacob");
+			}
 
+			if (time > 10 && time < 10 + Time.deltaTime) {
+				jacobAudio.clip = jacobAudioClips [currentClip];
+				jacobAudio.Play ();
 
+			}
+
+			if (time > 15 && time < 15 + Time.deltaTime) {
+				emmaAnimator.SetTrigger ("LeaveRoom");
+				jacobAnimator.SetTrigger ("FaceSophia");
+
+			}
 
 			if (time > 10 && time < 10 + Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
@@ -228,9 +271,22 @@ public class GameControllerSceneOne : MonoBehaviour {
 				currentClip++;
 			}
 
+
+
 			//Emma hugs Jacob. Asks a question. Is asked to leave.
 
 			// Jacob and Sophia sit down and talk. Very Simple.
+
+			if (time > 20 && time < 20 + Time.deltaTime) {
+				jacobAudio.clip = jacobAudioClips [currentClip];
+				jacobAudio.Play ();
+				currentClip++;
+			}
+
+			if (time > 40 && time < 40 + Time.deltaTime) {
+				jacobAudio.clip = jacobAudioClips [currentClip];
+				jacobAudio.Play ();
+			}
 		}
 	}
 

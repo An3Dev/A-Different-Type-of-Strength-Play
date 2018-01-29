@@ -287,8 +287,7 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			fadeAnimator.SetTrigger ("FadeIn");
 		}
 		if (time >= 205 && time < 205 + Time.deltaTime) {
-			finishedScene1 = true;
-
+			GameControllerSceneOne.finishedScene1 = true;
 			SceneManager.LoadScene ("Scene01");
 
 		}
