@@ -109,14 +109,8 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 			}
 
-			if (time > 29 && time < 36 + Time.deltaTime) {
-				if (time > 19 && time < 19 + Time.deltaTime) {
-					medicineBottle.transform.position = new Vector3 (-3.494f, 0.914f, 3.913f);
-					//medicineOffset = jacob.transform.position - medicineBottle.transform.position;
-				}
-
-				//medicineBottle.transform.position = jacob.transform.position + medicineOffset;
-			}
+//			if (time > 29 && time < 36 + Time.deltaTime) {
+//			}
 
 			if (time > 22f && time < 22f + Time.deltaTime) {
 				camera3.depth = -1;
@@ -129,7 +123,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 				camera1.transform.SetPositionAndRotation(new Vector3 (-1.204f, 1.797f, -0.364f), Quaternion.Euler(30, 60.62f, 0));
 			}
 
-			if (time >= 32 && time < 32 + Time.deltaTime) {
+			if (time >= 33 && time < 33 + Time.deltaTime) {
 				camera1.depth = -1;
 				camera3.depth = -3;
 				camera2.depth = -2;
@@ -259,7 +253,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 			}
 
-			if (time > 15 && time < 15 + Time.deltaTime) {
+			if (time > 12 && time < 15 + Time.deltaTime) {
 				emmaAnimator.SetTrigger ("LeaveRoom");
 				jacobAnimator.SetTrigger ("FaceSophia");
 
