@@ -20,14 +20,16 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 	public Animator jacobAnimator, narratorAnimator, sophiaAnimator, anniahAnimator, cam3Animator, cam2Animator, cam1Animator, emmaAnimator, fadeAnimator;
 
-	AudioSource narratorAudio, jacobAudio, sophiaAudio;
+	AudioSource narratorAudio, jacobAudio, sophiaAudio, emmaAudio;
 
 	Vector3 medicineOffset;
 
 
-	public AudioClip[] jacobAudioClips;
+	public AudioClip[] jacobAudioClips, sophiaAudioClips, narratorAudioClips, emmaAudioClips;
 
 	int currentClip = 0;
+	int currentClipSophia = 0;
+	int currentClipEmma = 0;
 
 	bool askMedicine;
 	bool grabMedicine;
@@ -55,6 +57,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 		if (finishedScene1) {
 			currentClip = 8;
+			currentClipSophia = 6;
 			emma.SetActive (true);
 		} else {
 			emma.SetActive (false);
@@ -87,6 +90,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 				camera2.depth = -1;
 				camera1.depth = -2;
 			}
+
 			// View Sophia
 			if (time > 15.0f && time < 15.0f + Time.deltaTime) {
 				camera2.depth = -3;
@@ -140,6 +144,14 @@ public class GameControllerSceneOne : MonoBehaviour {
 				currentClip++;
 			}
 
+			// Yeah (Sophia)
+
+			if (time >= 46 && time < 46 + Time.deltaTime) {
+				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
+				sophiaAudio.Play ();
+				currentClipSophia++;
+			}
+
 			// Been thinking
 			if (time >= 50 && time < 50 + Time.deltaTime) {
 				sophiaAnimator.SetBool ("GetOffCouch", true);
@@ -149,17 +161,46 @@ public class GameControllerSceneOne : MonoBehaviour {
 				currentClip++;
 			}
 
+			// What?
+
+			if (time >= 54 && time < 54 + Time.deltaTime) {
+				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
+				sophiaAudio.Play ();
+				currentClipSophia++;
+			}
+
+
+			// Only 75 percent
+
 			if (time >= 60 && time < 60 + Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
 			}
 
+			// Only?
+
+			if (time >= 46 && time < 46 + Time.deltaTime) {
+				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
+				sophiaAudio.Play ();
+				currentClipSophia++;
+			}
+
+
+
 			// yes
 			if (time >= 70 && time < 70 + Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
+			}
+
+			// Theres a 50 percent chance of having a boy
+
+			if (time >= 46 && time < 46 + Time.deltaTime) {
+				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
+				sophiaAudio.Play ();
+				currentClipSophia++;
 			}
 
 			// look,
@@ -169,11 +210,29 @@ public class GameControllerSceneOne : MonoBehaviour {
 				currentClip++;
 			}
 
+
+
+			// Physical strength is all that matters to you?
+
+			if (time >= 46 && time < 46 + Time.deltaTime) {
+				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
+				sophiaAudio.Play ();
+				currentClipSophia++;
+			}
+
 			// if i leave you won't be able to live without me
 			if (time >= 90 && time < 90 + Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
+			}
+
+			// Then leave!
+
+			if (time >= 46 && time < 46 + Time.deltaTime) {
+				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
+				sophiaAudio.Play ();
+				currentClipSophia++;
 			}
 
 			// Fine
@@ -182,20 +241,6 @@ public class GameControllerSceneOne : MonoBehaviour {
 				jacobAudio.Play ();
 				currentClip++;
 			}
-
-			//			if (time >= 90 && time < 90 + Time.deltaTime) {
-			//				jacobAudio.clip = jacobAudioClips [currentClip];
-			//				jacobAudio.Play ();
-			//				currentClip++;
-			//			}
-
-			//			if (time >= 95 && time < 95 + Time.deltaTime) {
-			//				jacobAudio.clip = jacobAudioClips [currentClip];
-			//				jacobAudio.Play ();
-			//				currentClip++;
-			//			}
-
-
 
 			// He leaves Sophia at 100 seconds.
 
@@ -247,39 +292,63 @@ public class GameControllerSceneOne : MonoBehaviour {
 				sophiaAnimator.SetTrigger ("FaceJacob");
 			}
 
+			// Where were you?
+
+			if (time >= 46 && time < 46 + Time.deltaTime) {
+				emmaAudio.clip = emmaAudioClips [currentClipEmma];
+				emmaAudio.Play ();
+				currentClipEmma++;
+			}
+
+			// tel you why later
 			if (time > 10 && time < 10 + Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
-
+				currentClip++;
 			}
 
-			if (time > 12 && time < 15 + Time.deltaTime) {
+			// OK.
+
+			if (time >= 16 && time < 16 + Time.deltaTime) {
+				emmaAudio.clip = emmaAudioClips [currentClipEmma];
+				emmaAudio.Play ();
+				currentClipEmma++;
+			}
+
+			if (time > 17 && time < 17 + Time.deltaTime) {
 				emmaAnimator.SetTrigger ("LeaveRoom");
 				jacobAnimator.SetTrigger ("FaceSophia");
 
 			}
 
-			if (time > 10 && time < 10 + Time.deltaTime) {
+
+			// i was wrong
+			if (time > 22 && time < 22 + Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
 			}
 
+			// what made you change?
 
-
-			//Emma hugs Jacob. Asks a question. Is asked to leave.
-
-			// Jacob and Sophia sit down and talk. Very Simple.
-
-			if (time > 20 && time < 20 + Time.deltaTime) {
-				jacobAudio.clip = jacobAudioClips [currentClip];
-				jacobAudio.Play ();
-				currentClip++;
+			if (time >= 36 && time < 36 + Time.deltaTime) {
+				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
+				sophiaAudio.Play ();
+				currentClipSophia++;
 			}
 
+			// an old friend
 			if (time > 40 && time < 40 + Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
+			}
+
+			// Yes. I forgive you.
+
+			if (time >= 60 && time < 60 + Time.deltaTime) {
+				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
+				sophiaAudio.Play ();
+				currentClipSophia++;
 			}
 		}
 	}

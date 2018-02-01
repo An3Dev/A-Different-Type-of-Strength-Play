@@ -1905,6 +1905,18 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a4f199d2b906e454683e33d68aed66b0, type: 3}
   - {fileID: 8300000, guid: 5c5ef47b4c4407844a3b01078ac855e5, type: 3}
   - {fileID: 8300000, guid: 7d7ff1c983dc468489984b99e20427ad, type: 3}
+  sophiaAudioClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  narratorAudioClips:
+  - {fileID: 0}
 --- !u!1001 &2069342170
 Prefab:
   m_ObjectHideFlags: 0
