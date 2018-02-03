@@ -30,10 +30,10 @@ public class GameControllerSceneTwo : MonoBehaviour {
 
 	Vector3 offset;
 
-	int currentClip = 0;
-	int currentClipMark = 0;
-	int currentClipNarrator = 0;
-	int currentClipSophia = 0;
+	public int currentClip = 0;
+	public int currentClipMark = 0;
+	public int currentClipNarrator = 0;
+	public int currentClipSophia = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -55,6 +55,8 @@ public class GameControllerSceneTwo : MonoBehaviour {
 		offset = camera1.transform.position - jacob.transform.position;
 
 		jacobAudio = jacob.GetComponent<AudioSource> ();
+		markAudio = mark.GetComponent<AudioSource> ();
+		sophiaAudio = sophia.GetComponent<AudioSource> ();
 
 	}
 
@@ -67,18 +69,18 @@ public class GameControllerSceneTwo : MonoBehaviour {
 
 		//		 Narrator starts talking
 
-		if (time > 2.0f && time <  2.0f + Time.deltaTime) {
+		if (time > 2.0f && time < 2.0f + Time.deltaTime) {
 			narratorAudio.Play ();
 			jacobAnimator.SetTrigger ("WalkToMark");
 
 		}
 
-		if (time > 2.0f && time <  10.0f + Time.deltaTime) {
+		if (time > 2.0f && time < 10.0f + Time.deltaTime) {
 			camera1.transform.position = Vector3.Lerp (camera1.transform.position, jacob.transform.position + offset, 1 * Time.deltaTime);
 
 		}
 
-		if (time > 10 && time <  10 + Time.deltaTime) {
+		if (time > 10 && time < 10 + Time.deltaTime) {
 			cam1Animator.SetTrigger ("TurnCamera");
 		}
 			
@@ -94,14 +96,14 @@ public class GameControllerSceneTwo : MonoBehaviour {
 
 		// Jacob says hi to mark.
 
-		if (time >= 18 && time < 18 + Time.deltaTime) {
+		if (time >= 16 && time < 16 + Time.deltaTime) {
 			jacobAudio.clip = jacobAudioClips [currentClip];
 			jacobAudio.Play ();
 			currentClip++;
 		}
 
 		// Mark says hi. just looking for a better home.
-		if (time >= 24 && time < 24 + Time.deltaTime) {
+		if (time >= 20 && time < 20 + Time.deltaTime) {
 			markAudio.clip = markAudioClips [currentClipMark];
 			markAudio.Play ();
 			currentClipMark++;
@@ -109,17 +111,18 @@ public class GameControllerSceneTwo : MonoBehaviour {
 
 		// He keeps walking when mark responds.
 
-		if (time > 26.0f && time <  29 + Time.deltaTime) {
-			camera2.transform.position = Vector3.Lerp (camera2.transform.position, new Vector3(8, 2, -29), 1 * Time.deltaTime);
+		if (time > 26.0f && time < 29 + Time.deltaTime) {
+			camera2.transform.position = Vector3.Lerp (camera2.transform.position, new Vector3 (8, 2, -29), 1 * Time.deltaTime);
 		}
 
 		// thats nice
-		if (time >= 27 && time < 30 + Time.deltaTime) {
+		if (time >= 27 && time < 27 + Time.deltaTime) {
 			jacobAudio.clip = jacobAudioClips [currentClip];
 			jacobAudio.Play ();
 			currentClip++;
 		}
 
+		// What's up you look sad
 		if (time >=  32 && time < 32 + Time.deltaTime) {
 			markAudio.clip = markAudioClips [currentClipMark];
 			markAudio.Play ();
@@ -140,14 +143,14 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			currentClipMark++;
 		}
 
-		// Come on man you can talk to me.
-		if (time >=  42 && time < 42 + Time.deltaTime) {
-			markAudio.clip = markAudioClips [currentClipMark];
-			markAudio.Play ();
-			currentClipMark++;
-		}
+//		// Come on man you can talk to me.
+//		if (time >=  42 && time < 42 + Time.deltaTime) {
+//			markAudio.clip = markAudioClips [currentClipMark];
+//			markAudio.Play ();
+//			currentClipMark++;
+//		}
 
-		// Jacob turns around says fine. Convo starts.
+		// Jacob turns around 
 		if (time > 45.0f && time <  50 + Time.deltaTime) {
 //			Quaternion rotation = jacob.transform.rotation;
 //			jacob.transform.rotation = Quaternion.Lerp (jacob.transform.rotation, Quaternion.Euler (0, 0, 0), 360 * Time.deltaTime);
@@ -179,14 +182,14 @@ public class GameControllerSceneTwo : MonoBehaviour {
 		}
 
 		// You have a wife?
-		if (time >=  32 && time < 32 + Time.deltaTime) {
+		if (time >=  55 && time < 55 + Time.deltaTime) {
 			markAudio.clip = markAudioClips [currentClipMark];
 			markAudio.Play ();
 			currentClipMark++;
 		}
 
 		// Id say had a wife.
-		if (time > 56 && time < 56 + Time.deltaTime){
+		if (time > 57 && time < 57 + Time.deltaTime){
 
 			jacobAudio.clip = jacobAudioClips [currentClip];
 			jacobAudio.Play ();
@@ -208,15 +211,15 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			currentClip++;
 		}
 
-		// Interrupts. You have a daughter?
-		if (time >=  70 && time < 70 + Time.deltaTime) {
-			markAudio.clip = markAudioClips [currentClipMark];
-			markAudio.Play ();
-			currentClipMark++;
-		}
+//		// Interrupts. You have a daughter?
+//		if (time >= 72 && time < 72 + Time.deltaTime) {
+//			markAudio.clip = markAudioClips [currentClipMark];
+//			markAudio.Play ();
+//			currentClipMark++;
+//		}
 
 		//Actually two daughters.
-		if (time > 65 && time < 65 + Time.deltaTime){
+		if (time > 72 && time < 72 + Time.deltaTime){
 
 			jacobAudio.clip = jacobAudioClips [currentClip];
 			jacobAudio.Play ();
@@ -224,14 +227,14 @@ public class GameControllerSceneTwo : MonoBehaviour {
 		}
 
 		// So you said women aren't strong at all? to a woman?
-		if (time >=  85 && time < 85 + Time.deltaTime) {
+		if (time >=  95 && time < 95 + Time.deltaTime) {
 			markAudio.clip = markAudioClips [currentClipMark];
 			markAudio.Play ();
 			currentClipMark++;
 		}
 
 		// exactly
-		if (time > 95 && time < 95 + Time.deltaTime){
+		if (time > 100 && time < 100 + Time.deltaTime){
 
 			jacobAudio.clip = jacobAudioClips [currentClip];
 			jacobAudio.Play ();
@@ -239,7 +242,7 @@ public class GameControllerSceneTwo : MonoBehaviour {
 		}
 
 		// Have you ever thought abnout what's going on in her mind?
-		if (time >=  100 && time < 100 + Time.deltaTime) {
+		if (time >=  105 && time < 105 + Time.deltaTime) {
 			markAudio.clip = markAudioClips [currentClipMark];
 			markAudio.Play ();
 			currentClipMark++;
@@ -261,7 +264,7 @@ public class GameControllerSceneTwo : MonoBehaviour {
 		}
 
 		// me and my friends (to himself)
-		if (time > 140 && time < 140 + Time.deltaTime){
+		if (time > 135 && time < 135 + Time.deltaTime){
 
 			jacobAudio.clip = jacobAudioClips [currentClip];
 			jacobAudio.Play ();
@@ -269,7 +272,7 @@ public class GameControllerSceneTwo : MonoBehaviour {
 		}
 
 		// dont think its right(out loud)
-		if (time > 155 && time < 155 + Time.deltaTime){
+		if (time > 147 && time < 147 + Time.deltaTime){
 
 			jacobAudio.clip = jacobAudioClips [currentClip];
 			jacobAudio.Play ();
@@ -277,14 +280,14 @@ public class GameControllerSceneTwo : MonoBehaviour {
 		}
 
 		// Then apologize to her.
-		if (time >= 170 && time < 170 + Time.deltaTime) {
+		if (time >= 161 && time < 161 + Time.deltaTime) {
 			markAudio.clip = markAudioClips [currentClipMark];
 			markAudio.Play ();
 			currentClipMark++;
 		}
 
 		// yeah I should 
-		if (time > 175 && time < 175 + Time.deltaTime){
+		if (time > 165 && time < 165 + Time.deltaTime){
 
 			jacobAudio.clip = jacobAudioClips [currentClip];
 			jacobAudio.Play ();
@@ -294,28 +297,28 @@ public class GameControllerSceneTwo : MonoBehaviour {
 
 		// Jacob walks toward his house.
 
-		if (time > 178 && time <  178 + Time.deltaTime) {
+		if (time > 169 && time <  169 + Time.deltaTime) {
 			jacobAnimator.SetTrigger ("WalkToHouse");
 
 		}
 
-		// Man I'm good at these talks.
-		if (time >=  180 && time < 180 + Time.deltaTime) {
-			markAudio.clip = markAudioClips [currentClipMark];
-			markAudio.Play ();
-			currentClipMark++;
-		}
+//		// Man I'm good at these talks.
+//		if (time >=  180 && time < 180 + Time.deltaTime) {
+//			markAudio.clip = markAudioClips [currentClipMark];
+//			markAudio.Play ();
+//			currentClipMark++;
+//		}
 		 
 		// narrator says it took a lot of courage while jacob walks.
 
-		if (time >=  187 && time < 187 + Time.deltaTime) {
+		if (time >=  172 && time < 172 + Time.deltaTime) {
 			narratorAudio.clip = narratorAudioClips [currentClipNarrator];
 			narratorAudio.Play ();
 			currentClipNarrator++;
 		}
 
 		// Switch to camera 1. Set offset
-		if (time > 182 && time < 182 + Time.deltaTime) {
+		if (time > 180 && time < 180 + Time.deltaTime) {
 			//cam1Animator.SetTrigger ("FollowJacob");
 			camera1.depth = -1;
 			camera2.depth = -2;
@@ -324,7 +327,7 @@ public class GameControllerSceneTwo : MonoBehaviour {
 		}
 
 		// Follow jacob walking home. With new offset.
-		if (time > 182 && time < 188 + Time.deltaTime) {
+		if (time > 179 && time < 190 + Time.deltaTime) {
 			if (time > 182 && time < 182 + Time.deltaTime) {
 				offset = camera1.transform.position - jacob.transform.position;
 			}
@@ -354,7 +357,7 @@ public class GameControllerSceneTwo : MonoBehaviour {
 		}
 
 		// Narrator says started leaving after 5 minutes.
-		if (time >=  205 && time < 205 + Time.deltaTime) {
+		if (time >=  208 && time < 208 + Time.deltaTime) {
 			narratorAudio.clip = narratorAudioClips [currentClipNarrator];
 			narratorAudio.Play ();
 			currentClipNarrator++;
@@ -366,7 +369,7 @@ public class GameControllerSceneTwo : MonoBehaviour {
 		}
 
 		// Switch camera to not see the door.
-		if (time > 214 && time < 214 + Time.deltaTime) {
+		if (time > 217 && time < 217 + Time.deltaTime) {
 			camera1.transform.position = new Vector3 (10.287f, 1.852f, 2.228f);
 		}
 
@@ -388,9 +391,9 @@ public class GameControllerSceneTwo : MonoBehaviour {
 		// scene three( go to scene one)
 
 
-		if (time > 230 && time < 230 + Time.deltaTime) {
-			fadeAnimator.SetTrigger ("FadeIn");
-		}
+//		if (time > 230 && time < 230 + Time.deltaTime) {
+//			fadeAnimator.SetTrigger ("FadeIn");
+//		}
 		if (time >= 231 && time < 231 + Time.deltaTime) {
 			GameControllerSceneOne.finishedScene1 = true;
 			SceneManager.LoadScene ("Scene01");

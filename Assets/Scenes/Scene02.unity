@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -432,6 +432,91 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 17.623001, y: 37.466003, z: -3.989}
+--- !u!1 &571791869 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1557285461692928, guid: 96bc06697b68b9647ae880277bad128e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1444854071}
+--- !u!82 &571791872
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 571791869}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &585400083 stripped
 Animator:
   m_PrefabParentObject: {fileID: 95504814215783816, guid: 8587bf994adc5a04fa406c2a6ae8a8e5,
@@ -628,6 +713,91 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1218423303 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1927313846819364, guid: 0c8db2e416c3b5e4b9f557209838b954,
+    type: 2}
+  m_PrefabInternal: {fileID: 1285386988}
+--- !u!82 &1218423305
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1218423303}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &1237277083 stripped
 Animator:
   m_PrefabParentObject: {fileID: 95322622794559518, guid: 0c8db2e416c3b5e4b9f557209838b954,
@@ -1127,24 +1297,25 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 692171c0e477ee843a4d7d27838b382f, type: 3}
   - {fileID: 8300000, guid: 130a6ec5ed7856846ba781932f461f5a, type: 3}
   markAudioClips:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: f12a3919f383a414aa013a73372413b4, type: 3}
+  - {fileID: 8300000, guid: 45cc62d6dbc9f8848a78f0394280a645, type: 3}
+  - {fileID: 8300000, guid: c4f115d85ead41241bb96f4c1dfc506e, type: 3}
+  - {fileID: 8300000, guid: aa9013c4304d43349be2222e9b18a5bd, type: 3}
+  - {fileID: 8300000, guid: a2443ce5e7faa7744843ab0082125cd5, type: 3}
+  - {fileID: 8300000, guid: 17891a04a49536041855b79591575781, type: 3}
+  - {fileID: 8300000, guid: 86b2888f2cfa1ea49a10510e4dac7089, type: 3}
+  - {fileID: 8300000, guid: 5fe1298af9c6ff348987a20237065351, type: 3}
+  - {fileID: 8300000, guid: def686d4fe527ce459bfa76f74db1c03, type: 3}
   sophiaAudioClips:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 49112e195057f467fbeeb61e09d932f7, type: 3}
+  - {fileID: 8300000, guid: 49112e195057f467fbeeb61e09d932f7, type: 3}
   narratorAudioClips:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 22ed083e371bf49349fb30154ce04980, type: 3}
+  - {fileID: 8300000, guid: 22ed083e371bf49349fb30154ce04980, type: 3}
+  currentClip: 0
+  currentClipMark: 0
+  currentClipNarrator: 0
+  currentClipSophia: 0
 --- !u!4 &1848858400
 Transform:
   m_ObjectHideFlags: 0
