@@ -7,7 +7,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 	public float timeScale = 1;
 
-	public static bool finishedScene1;
+	public static bool finishedScene1 = true;
 	public bool finishedScenePublic;
 
 	GameObject jacob, sophia, anniah, narrator, emma, medicineBottle;
@@ -18,7 +18,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 	Animation jacobWalk, jacobIdle, sophiaIdle, anniahIdle;
 
-	public Animator jacobAnimator, narratorAnimator, sophiaAnimator, anniahAnimator, cam3Animator, cam2Animator, cam1Animator, emmaAnimator, fadeAnimator;
+	public Animator jacobAnimator, narratorAnimator, sophiaAnimator, anniahAnimator, cam3Animator, emmaAnimator, fadeAnimator;
 
 	AudioSource narratorAudio, jacobAudio, sophiaAudio, emmaAudio;
 
@@ -54,6 +54,9 @@ public class GameControllerSceneOne : MonoBehaviour {
 		camera3 = GameObject.Find ("Camera3").GetComponent<Camera>();
 
 		jacobAudio = jacob.GetComponent<AudioSource> ();
+		sophiaAudio = sophia.GetComponent<AudioSource> ();
+		narratorAudio = narrator.GetComponent<AudioSource> ();
+		emmaAudio = emma.GetComponent<AudioSource> ();
 
 		if (finishedScene1) {
 			currentClip = 8;
@@ -288,20 +291,20 @@ public class GameControllerSceneOne : MonoBehaviour {
 				cam3Animator.SetTrigger ("Transition");
 			}
 
-			if (time > 5 && time < 5 + Time.deltaTime) {
+			if (time > 2 && time < 2 + Time.deltaTime) {
 				sophiaAnimator.SetTrigger ("FaceJacob");
 			}
 
 			// Where were you?
 
-			if (time >= 46 && time < 46 + Time.deltaTime) {
+			if (time >= 7 && time < 7 + Time.deltaTime) {
 				emmaAudio.clip = emmaAudioClips [currentClipEmma];
 				emmaAudio.Play ();
 				currentClipEmma++;
 			}
 
 			// tel you why later
-			if (time > 10 && time < 10 + Time.deltaTime) {
+			if (time > 12 && time < 12+ Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
@@ -313,11 +316,13 @@ public class GameControllerSceneOne : MonoBehaviour {
 				emmaAudio.clip = emmaAudioClips [currentClipEmma];
 				emmaAudio.Play ();
 				currentClipEmma++;
-			}
-
-			if (time > 17 && time < 17 + Time.deltaTime) {
 				emmaAnimator.SetTrigger ("LeaveRoom");
 				jacobAnimator.SetTrigger ("FaceSophia");
+
+			}
+
+			if (time > 16 && time < 16 + Time.deltaTime) {
+				
 
 			}
 
