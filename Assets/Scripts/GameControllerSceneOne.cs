@@ -7,7 +7,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 	public float timeScale = 1;
 
-	public static bool finishedScene1 = true;
+	public static bool finishedScene1 = false;
 	public bool finishedScenePublic;
 
 	GameObject jacob, sophia, anniah, narrator, emma, medicineBottle;
@@ -116,6 +116,13 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 			}
 
+			// RIght here (Sophia)
+
+			if (time >= 23 && time < 23 + Time.deltaTime) {
+				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
+				sophiaAudio.Play ();
+				currentClipSophia++;
+			}
 //			if (time > 29 && time < 36 + Time.deltaTime) {
 //			}
 
@@ -166,7 +173,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 			// What?
 
-			if (time >= 54 && time < 54 + Time.deltaTime) {
+			if (time >= 60 && time < 60 + Time.deltaTime) {
 				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
 				sophiaAudio.Play ();
 				currentClipSophia++;
@@ -175,7 +182,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 			// Only 75 percent
 
-			if (time >= 60 && time < 60 + Time.deltaTime) {
+			if (time >= 70 && time < 70 + Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
@@ -183,7 +190,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 			// Only?
 
-			if (time >= 46 && time < 46 + Time.deltaTime) {
+			if (time >= 75 && time < 75 + Time.deltaTime) {
 				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
 				sophiaAudio.Play ();
 				currentClipSophia++;
@@ -192,7 +199,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 
 			// yes
-			if (time >= 70 && time < 70 + Time.deltaTime) {
+			if (time >= 80 && time < 80 + Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
@@ -200,14 +207,14 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 			// Theres a 50 percent chance of having a boy
 
-			if (time >= 46 && time < 46 + Time.deltaTime) {
+			if (time >= 85 && time < 85 + Time.deltaTime) {
 				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
 				sophiaAudio.Play ();
 				currentClipSophia++;
 			}
 
 			// look,
-			if (time >= 80 && time < 80 + Time.deltaTime) {
+			if (time >= 90 && time < 90 + Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
@@ -217,14 +224,14 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 			// Physical strength is all that matters to you?
 
-			if (time >= 46 && time < 46 + Time.deltaTime) {
+			if (time >= 100 && time < 100 + Time.deltaTime) {
 				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
 				sophiaAudio.Play ();
 				currentClipSophia++;
 			}
 
 			// if i leave you won't be able to live without me
-			if (time >= 90 && time < 90 + Time.deltaTime) {
+			if (time >= 110 && time < 110 + Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
@@ -232,14 +239,14 @@ public class GameControllerSceneOne : MonoBehaviour {
 
 			// Then leave!
 
-			if (time >= 46 && time < 46 + Time.deltaTime) {
+			if (time >= 118 && time < 118 + Time.deltaTime) {
 				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
 				sophiaAudio.Play ();
 				currentClipSophia++;
 			}
 
 			// Fine
-			if (time >= 100 && time < 100 + Time.deltaTime) {
+			if (time >= 124 && time < 100 + Time.deltaTime) {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
@@ -288,6 +295,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 				camera2.depth = -3;
 				camera1.depth = -2;
 				camera3.depth = -1;
+				camera3.transform.position = new Vector3 (-3.83f, 2.247f, 7.472f);
 				cam3Animator.SetTrigger ("Transition");
 			}
 
