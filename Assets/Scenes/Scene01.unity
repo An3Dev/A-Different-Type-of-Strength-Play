@@ -2088,17 +2088,17 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5c5ef47b4c4407844a3b01078ac855e5, type: 3}
   - {fileID: 8300000, guid: 7d7ff1c983dc468489984b99e20427ad, type: 3}
   sophiaAudioClips:
-  - {fileID: 8300000, guid: 49112e195057f467fbeeb61e09d932f7, type: 3}
-  - {fileID: 8300000, guid: 49112e195057f467fbeeb61e09d932f7, type: 3}
-  - {fileID: 8300000, guid: 49112e195057f467fbeeb61e09d932f7, type: 3}
-  - {fileID: 8300000, guid: 49112e195057f467fbeeb61e09d932f7, type: 3}
-  - {fileID: 8300000, guid: 49112e195057f467fbeeb61e09d932f7, type: 3}
-  - {fileID: 8300000, guid: 49112e195057f467fbeeb61e09d932f7, type: 3}
-  - {fileID: 8300000, guid: 49112e195057f467fbeeb61e09d932f7, type: 3}
-  - {fileID: 8300000, guid: 49112e195057f467fbeeb61e09d932f7, type: 3}
-  - {fileID: 8300000, guid: 49112e195057f467fbeeb61e09d932f7, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   narratorAudioClips:
-  - {fileID: 8300000, guid: 22ed083e371bf49349fb30154ce04980, type: 3}
+  - {fileID: 0}
   emmaAudioClips:
   - {fileID: 8300000, guid: 059e06f212ebfd84999f1bf2809c9c21, type: 3}
   - {fileID: 8300000, guid: 2c700c98c2d59844eae67d67382f5863, type: 3}
@@ -2177,6 +2177,11 @@ Prefab:
     - target: {fileID: 4299484217751116, guid: 8587bf994adc5a04fa406c2a6ae8a8e5, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -179.54102
+      objectReference: {fileID: 0}
+    - target: {fileID: 82592124787212520, guid: 8587bf994adc5a04fa406c2a6ae8a8e5,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8587bf994adc5a04fa406c2a6ae8a8e5, type: 2}

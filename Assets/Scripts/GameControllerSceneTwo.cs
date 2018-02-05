@@ -50,7 +50,7 @@ public class GameControllerSceneTwo : MonoBehaviour {
 		// Camera
 		camera1 = GameObject.Find("Camera1").GetComponent<Camera>();
 		camera2 = GameObject.Find ("Camera2").GetComponent<Camera>();
-		//camera3 = GameObject.Find ("Camera3").GetComponent<Camera>();
+		camera3 = GameObject.Find ("Camera3").GetComponent<Camera>();
 
 		offset = camera1.transform.position - jacob.transform.position;
 
@@ -181,12 +181,31 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			currentClip++;
 		}
 
+
+		// put camera closer to jacob
+		if (time > 52 && time < 52 + Time.deltaTime) {
+			
+			camera2.depth = -1;
+			camera3.depth = -2;
+
+			camera2.transform.position = new Vector3 (8.57f, 1.54f, -24.03f);
+			camera2.transform.rotation = Quaternion.Euler(new Vector3(17, 26, -4));
+		}
+
 		// You have a wife?
 		if (time >=  55 && time < 55 + Time.deltaTime) {
 			markAudio.clip = markAudioClips [currentClipMark];
 			markAudio.Play ();
 			currentClipMark++;
+
+			camera3.transform.position = new Vector3 (9.32f, 1.29f, -21.44f);
+			camera3.transform.rotation = Quaternion.Euler (0, 120, 0);
+
+			camera2.depth = -2;
+			camera3.depth = -1;
+
 		}
+
 
 		// Id say had a wife.
 		if (time > 57 && time < 57 + Time.deltaTime){
@@ -194,6 +213,9 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			jacobAudio.clip = jacobAudioClips [currentClip];
 			jacobAudio.Play ();
 			currentClip++;
+
+			camera2.depth = -1;
+			camera3.depth = -2;
 		}
 
 		// Why did you leave her?
@@ -201,6 +223,9 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			markAudio.clip = markAudioClips [currentClipMark];
 			markAudio.Play ();
 			currentClipMark++;
+
+			camera2.depth = -2;
+			camera3.depth = -1;
 		}
 
 		// Long story short
@@ -209,6 +234,9 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			jacobAudio.clip = jacobAudioClips [currentClip];
 			jacobAudio.Play ();
 			currentClip++;
+
+			camera2.depth = -1;
+			camera3.depth = -2;
 		}
 
 //		// Interrupts. You have a daughter?
@@ -222,8 +250,11 @@ public class GameControllerSceneTwo : MonoBehaviour {
 		if (time > 72 && time < 72 + Time.deltaTime){
 
 			jacobAudio.clip = jacobAudioClips [currentClip];
+			jacobAudio.time = 5;
 			jacobAudio.Play ();
 			currentClip++;
+
+
 		}
 
 		// So you said women aren't strong at all? to a woman?
@@ -231,14 +262,21 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			markAudio.clip = markAudioClips [currentClipMark];
 			markAudio.Play ();
 			currentClipMark++;
+
+			camera2.depth = -2;
+			camera3.depth = -1;
 		}
 
 		// exactly
 		if (time > 100 && time < 100 + Time.deltaTime){
 
 			jacobAudio.clip = jacobAudioClips [currentClip];
+			jacobAudio.time = 0;
 			jacobAudio.Play ();
 			currentClip++;
+
+			camera2.depth = -1;
+			camera3.depth = -2;
 		}
 
 		// Have you ever thought abnout what's going on in her mind?
@@ -246,6 +284,9 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			markAudio.clip = markAudioClips [currentClipMark];
 			markAudio.Play ();
 			currentClipMark++;
+
+			camera2.depth = -2;
+			camera3.depth = -1;
 		}
 
 		// theres no need to
@@ -254,6 +295,9 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			jacobAudio.clip = jacobAudioClips [currentClip];
 			jacobAudio.Play ();
 			currentClip++;
+
+			camera2.depth = -1;
+			camera3.depth = -2;
 		}
 
 		// First of all.
@@ -261,6 +305,9 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			markAudio.clip = markAudioClips [currentClipMark];
 			markAudio.Play ();
 			currentClipMark++;
+
+			camera2.depth = -2;
+			camera3.depth = -1;
 		}
 
 		// me and my friends (to himself)
@@ -269,6 +316,9 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			jacobAudio.clip = jacobAudioClips [currentClip];
 			jacobAudio.Play ();
 			currentClip++;
+
+			camera2.depth = -1;
+			camera3.depth = -2;
 		}
 
 		// dont think its right(out loud)
@@ -284,6 +334,9 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			markAudio.clip = markAudioClips [currentClipMark];
 			markAudio.Play ();
 			currentClipMark++;
+
+			camera2.depth = -2;
+			camera3.depth = -1;
 		}
 
 		// yeah I should 
@@ -292,6 +345,9 @@ public class GameControllerSceneTwo : MonoBehaviour {
 			jacobAudio.clip = jacobAudioClips [currentClip];
 			jacobAudio.Play ();
 			currentClip++;
+
+			camera2.depth = -1;
+			camera3.depth = -2;
 		}
 
 

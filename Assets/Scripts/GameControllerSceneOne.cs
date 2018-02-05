@@ -111,8 +111,7 @@ public class GameControllerSceneOne : MonoBehaviour {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
-				// Previous animation has to have exit time.
-				jacobAnimator.SetBool ("LeaveSophia", true);
+
 
 			}
 
@@ -169,6 +168,11 @@ public class GameControllerSceneOne : MonoBehaviour {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
+
+				camera3.transform.position = new Vector3(-3.06f, 1.44f, 3.63f);
+				camera3.transform.rotation = Quaternion.Euler (new Vector3 (20, 90, 0));
+				camera2.depth = -2;
+				camera3.depth = -1;
 			}
 
 			// What?
@@ -177,6 +181,11 @@ public class GameControllerSceneOne : MonoBehaviour {
 				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
 				sophiaAudio.Play ();
 				currentClipSophia++;
+
+				camera2.transform.position = new Vector3(-3.06f, 1.44f, 3.63f);
+				camera2.transform.rotation = Quaternion.Euler (new Vector3 (20, -90, 0));
+				camera2.depth = -1;
+				camera3.depth = -2;
 			}
 
 
@@ -186,6 +195,9 @@ public class GameControllerSceneOne : MonoBehaviour {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
+
+				camera2.depth = -2;
+				camera3.depth = -1;
 			}
 
 			// Only?
@@ -194,6 +206,9 @@ public class GameControllerSceneOne : MonoBehaviour {
 				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
 				sophiaAudio.Play ();
 				currentClipSophia++;
+
+				camera2.depth = -1;
+				camera3.depth = -2;
 			}
 
 
@@ -203,6 +218,9 @@ public class GameControllerSceneOne : MonoBehaviour {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
+
+				camera2.depth = -2;
+				camera3.depth = -1;
 			}
 
 			// Theres a 50 percent chance of having a boy
@@ -211,6 +229,9 @@ public class GameControllerSceneOne : MonoBehaviour {
 				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
 				sophiaAudio.Play ();
 				currentClipSophia++;
+
+				camera2.depth = -1;
+				camera3.depth = -2;
 			}
 
 			// look,
@@ -218,6 +239,9 @@ public class GameControllerSceneOne : MonoBehaviour {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
+
+				camera2.depth = -2;
+				camera3.depth = -1;
 			}
 
 
@@ -228,6 +252,9 @@ public class GameControllerSceneOne : MonoBehaviour {
 				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
 				sophiaAudio.Play ();
 				currentClipSophia++;
+
+				camera2.depth = -1;
+				camera3.depth = -2;
 			}
 
 			// if i leave you won't be able to live without me
@@ -235,6 +262,9 @@ public class GameControllerSceneOne : MonoBehaviour {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
+
+				camera2.depth = -2;
+				camera3.depth = -1;
 			}
 
 			// Then leave!
@@ -243,6 +273,9 @@ public class GameControllerSceneOne : MonoBehaviour {
 				sophiaAudio.clip = sophiaAudioClips [currentClipSophia];
 				sophiaAudio.Play ();
 				currentClipSophia++;
+
+				camera2.depth = -1;
+				camera3.depth = -2;
 			}
 
 			// Fine
@@ -250,19 +283,30 @@ public class GameControllerSceneOne : MonoBehaviour {
 				jacobAudio.clip = jacobAudioClips [currentClip];
 				jacobAudio.Play ();
 				currentClip++;
+
+				camera2.depth = -2;
+				camera3.depth = -1;
+
+
+				jacobAnimator.SetBool ("LeaveSophia", true);
 			}
 
 			// He leaves Sophia at 100 seconds.
 
-			if (time >= 96 && time < 96 + Time.deltaTime) {
+			if (time >= 126 && time < 126 + Time.deltaTime) {
+
+				camera2.transform.position = new Vector3 (-4.99f, 1.82f, 5.39f);
+				camera2.transform.rotation = Quaternion.Euler (new Vector3(14, 161, 0));
+				camera2.depth = -1;
+				camera3.depth = -2;
 				sophiaAnimator.SetTrigger ("ShakeHead");
 			}
 
 
-			if (time >= 96 && time < 96 + Time.deltaTime) {
-				fadeAnimator.SetTrigger ("FadeOut");
-			}
-			if (time >= 100 && time < 100 + Time.deltaTime) {
+//			if (time >= 96 && time < 96 + Time.deltaTime) {
+//				fadeAnimator.SetTrigger ("FadeOut");
+//			}
+			if (time >= 132 && time < 132 + Time.deltaTime) {
 				finishedScene1 = true;
 				SceneManager.LoadScene ("Scene02");
 
